@@ -1,21 +1,26 @@
-import { BlogPosts } from 'app/components/posts'
+import Link from "next/link";
 
 export default function Page() {
   return (
     <section>
       <h1 className="mb-8 text-2xl font-semibold tracking-tighter">
-        My Portfolio
+        HELLO WORLD
       </h1>
-      <p className="mb-4">
-        {`I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in
-        Vim's keystroke commands and tabs' flexibility for personal viewing
-        preferences. This extends to my support for static typing, where its
-        early error detection ensures cleaner code, and my preference for dark
-        mode, which eases long coding sessions by reducing eye strain.`}
-      </p>
+      <p className="mb-4">I am a designer! Oh my days!</p>
+
       <div className="my-8">
-        <BlogPosts />
+        <Link className="flex flex-col space-y-1 mb-4" href={`/easyPark`}>
+          Easy Park Case Study
+        </Link>
+
+        <Link className="flex flex-col space-y-1 mb-4" href={`/nordPass`}>
+          NordPass case study
+        </Link>
+
+        <Link className="flex flex-col space-y-1 mb-4" href={`/minesweeper`}>
+          MineSweeper case study
+        </Link>
       </div>
     </section>
-  )
+  );
 }
