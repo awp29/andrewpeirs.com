@@ -18,6 +18,7 @@ import { twMerge } from "tailwind-merge";
 import Image from "next/image";
 import ExternalLink from "app/components/externalLink";
 import useScrollToTop from "app/hooks/useScrollToTop";
+import BackButton from "app/components/BackButton";
 
 const Page = () => {
   const finalDesignsRef = createRef(null);
@@ -30,6 +31,8 @@ const Page = () => {
       <ScrollToTopButton opacity={opacity} />
 
       <Header>
+        <BackButton />
+
         <Title>EasyPark - A parking app you actually want to use</Title>
         <Details>
           <DetailsColumn>

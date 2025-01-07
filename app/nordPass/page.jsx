@@ -1,5 +1,6 @@
 "use client";
 
+import BackButton from "app/components/BackButton";
 import Details from "app/components/caseStudy/Details";
 import DetailsColumn from "app/components/caseStudy/DetailsColumn";
 import DetailsLabel from "app/components/caseStudy/DetailsLabel";
@@ -27,6 +28,8 @@ const Page = () => {
       <ScrollToTopButton opacity={opacity} />
 
       <Header>
+        <BackButton />
+
         <Title>NordPass Redesign</Title>
         <Details>
           <DetailsColumn>

@@ -9,7 +9,8 @@ const ScrollToTopButton = (props) => {
       style={{ opacity }}
       className={classNames(
         "group",
-        "fixed bottom-[32px] right-[32px] w-[48px] h-[56px] z-10",
+        "fixed bottom-[32px] right-[32px] min-w-[48px] h-[48px] z-10",
+        "md:w-[56px] md:h-[56px]",
         "bg-[#4C64D9] text-white items-center w-fit text-[14px] px-[12px] py-[8px] drop-shadow-md",
         "hover:brightness-95",
         "active:brightness-90 active:drop-shadow-none"
@@ -24,6 +25,10 @@ const ScrollToTopButton = (props) => {
           )}
         >
           <Image
+            className={classNames(
+              "w-[24px] h-[24px]",
+              "md:w-[32px] md:h-[32px]"
+            )}
             src="/icons/arrowUp.svg"
             width={32}
             height={32}
@@ -38,6 +43,10 @@ const ScrollToTopButton = (props) => {
           )}
         >
           <Image
+            className={classNames(
+              "w-[24px] h-[24px]",
+              "md:w-[32px] md:h-[32px]"
+            )}
             src="/icons/arrowUp.svg"
             width={32}
             height={32}
