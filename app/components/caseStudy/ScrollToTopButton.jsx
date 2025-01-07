@@ -10,7 +10,7 @@ const ScrollToTopButton = (props) => {
       className={classNames(
         "group",
         "fixed bottom-[32px] right-[32px] w-[48px] h-[56px] z-10",
-        "bg-[#4C64D9] text-white items-center font-mono w-fit text-[14px] px-[12px] py-[8px] drop-shadow-md",
+        "bg-[#4C64D9] text-white items-center w-fit text-[14px] px-[12px] py-[8px] drop-shadow-md",
         "hover:brightness-95",
         "active:brightness-90 active:drop-shadow-none"
       )}

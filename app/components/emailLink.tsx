@@ -10,6 +10,8 @@ import {
   shift,
 } from "@floating-ui/react";
 import { useEffect, useRef, useState } from "react";
+import { ibm } from "app/fonts";
+import classNames from "classnames";
 
 const EmailLink = () => {
   const [clicked, setClicked] = useState(false);
@@ -72,7 +74,7 @@ const EmailLink = () => {
 
       {isOpen && (
         <div
-          className="bg-black text-white p-[16px] font-mono"
+          className={classNames(ibm.className, "bg-black text-white p-[16px]")}
           ref={refs.setFloating}
           style={floatingStyles}
           {...getFloatingProps()}

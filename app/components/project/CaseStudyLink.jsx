@@ -1,6 +1,7 @@
 import classNames from "classnames";
 import Image from "next/image";
 import Link from "next/link";
+import { ibm } from "app/fonts";
 
 const CaseStudyLink = (props) => {
   const { to } = props;
@@ -8,8 +9,9 @@ const CaseStudyLink = (props) => {
   return (
     <Link
       className={classNames(
+        ibm.className,
         "group block",
-        "bg-[#4C64D9] text-white items-center font-mono w-fit text-[14px] px-[12px] py-[8px] drop-shadow-md",
+        "bg-[#4C64D9] text-white items-center w-fit text-[14px] px-[12px] py-[8px] drop-shadow-md",
         "hover:brightness-95",
         "active:brightness-90 active:drop-shadow-none"
       )}

@@ -1,11 +1,13 @@
 import classNames from "classnames";
+import { ibm } from "app/fonts";
 
 const Percent = (props) => {
   const { children } = props;
   return (
     <h4
       className={classNames(
-        "text-[#4C64D9] text-[24px] font-mono",
+        ibm.className,
+        "text-[#4C64D9] text-[24px]",
         "md:text-[32px]"
       )}
     >

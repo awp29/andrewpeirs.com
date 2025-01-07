@@ -1,4 +1,5 @@
 import classNames from "classnames";
+import { ibm } from "app/fonts";
 
 const Header = (props) => {
   const { children } = props;
@@ -6,7 +7,8 @@ const Header = (props) => {
   return (
     <h3
       className={classNames(
-        "text-[#C73A3A] text-[16px] font-mono mb-[8px]",
+        ibm.className,
+        "text-[#C73A3A] text-[16px] mb-[8px]",
         "md:mb-[12px]"
       )}
     >

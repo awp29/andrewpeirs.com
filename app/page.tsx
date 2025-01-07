@@ -6,6 +6,7 @@ import FloatingProfileImage from "./components/floatingProfileImage";
 import EmailLink from "./components/emailLink";
 import ExternalLink from "./components/externalLink";
 import Project from "./components/project/Project";
+import { ibm } from "app/fonts";
 
 export default function Page() {
   const headerRef = useRef(null);
@@ -25,7 +26,12 @@ export default function Page() {
             "md:max-w-[816px] md:mt-64"
           )}
         >
-          <h2 className="text-[#C73A3A] font-mono text-[20px] md:text-[32px]">
+          <h2
+            className={classNames(
+              ibm.className,
+              "text-[#C73A3A] text-[20px] md:text-[32px]"
+            )}
+          >
             Hello world!
           </h2>
           <h1 className="font-bold text-[40px] md:text-[56px]">
