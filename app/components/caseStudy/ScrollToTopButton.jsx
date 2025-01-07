@@ -2,11 +2,11 @@ import classNames from "classnames";
 import Image from "next/image";
 
 const ScrollToTopButton = (props) => {
-  const { style } = props;
+  const { opacity } = props;
 
   return (
     <button
-      style={style}
+      style={{ opacity }}
       className={classNames(
         "group",
         "fixed bottom-[32px] right-[32px] w-[48px] h-[56px] z-10",

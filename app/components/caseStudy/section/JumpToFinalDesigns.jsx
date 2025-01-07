@@ -1,10 +1,9 @@
 import classNames from "classnames";
 import Image from "next/image";
 import { ibm } from "app/fonts";
+import React from "react";
 
-const JumpToFinalDesignsButton = (props) => {
-  const { onClick } = props;
-
+const JumpToFinalDesignsButton = React.forwardRef((_, ref) => {
   return (
     <button
       className={classNames(
@@ -14,7 +13,11 @@ const JumpToFinalDesignsButton = (props) => {
         "hover:brightness-95",
         "active:brightness-90 active:drop-shadow-none"
       )}
-      onClick={onClick}
+      onClick={() => {
+        ref.current.scrollIntoView({
+          behavior: "smooth",
+        });
+      }}
     >
       <span className="block relative overflow-clip">
         <span
@@ -49,6 +52,6 @@ const JumpToFinalDesignsButton = (props) => {
       </span>
     </button>
   );
-};
+});
 
 export default JumpToFinalDesignsButton;

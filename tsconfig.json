@@ -27,7 +27,9 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "app/easyPark/page.jsx"
+    "app/easyPark/page.jsx",
+    "app/nordPass/page.jsx",
+    "app/minesweeper/page.jsx"
   ],
   "exclude": ["node_modules"]
 }

@@ -6,7 +6,7 @@ const Header = (props) => {
     <div
       className={twMerge(
         "m-auto px-[16px] mb-[48px] mt-[96px]",
-        "md:max-w-[800px] md:px-[32px] md:mb-[96px] md:mt-[144px]"
+        "md:max-w-[800px] md:px-[16px] md:mb-[96px] md:mt-[144px]"
       )}
     >
       {children}

@@ -1,6 +1,6 @@
 "use client";
 
-import { createRef, useLayoutEffect, useState } from "react";
+import { createRef } from "react";
 import ScrollToTopButton from "../components/caseStudy/ScrollToTopButton";
 import useScrollPosition from "app/hooks/useScrollPosition";
 import Header from "app/components/caseStudy/Header";
@@ -17,23 +17,17 @@ import Quote from "app/components/caseStudy/quote/Quote";
 import { twMerge } from "tailwind-merge";
 import Image from "next/image";
 import ExternalLink from "app/components/externalLink";
+import useScrollToTop from "app/hooks/useScrollToTop";
 
 const Page = () => {
   const finalDesignsRef = createRef(null);
 
-  const [opacity, setOpacity] = useState(0);
   const scrollPositon = useScrollPosition();
-
-  useLayoutEffect(() => {
-    const maxScroll = document.documentElement.scrollHeight * 0.2;
-    const scroll = Math.min(Math.max(scrollPositon, 0), maxScroll);
-
-    setOpacity(scroll / maxScroll);
-  }, [scrollPositon]);
+  const opacity = useScrollToTop(scrollPositon);
 
   return (
     <>
-      <ScrollToTopButton style={{ opacity: opacity }} />
+      <ScrollToTopButton opacity={opacity} />
 
       <Header>
         <Title>EasyPark - A parking app you actually want to use</Title>
@@ -78,13 +72,7 @@ const Page = () => {
           I designed EasyPark, a new parking app with user needs at it’s centre.
         </Section.Text>
 
-        <Section.JumpToFinalDesignsButton
-          onClick={() => {
-            finalDesignsRef.current.scrollIntoView({
-              behavior: "smooth",
-            });
-          }}
-        />
+        <Section.JumpToFinalDesignsButton ref={finalDesignsRef} />
       </Section>
 
       <Section>
@@ -369,7 +357,8 @@ const Page = () => {
 
       <Section.FullWidthImage src="/images/easyParkCaseStudy/practicalUI.png" />
 
-      <Section ref={finalDesignsRef}>
+      <div ref={finalDesignsRef} />
+      <Section>
         <Section.Label>• HIGH FIDELITY DESIGNS + PROTOTYPE</Section.Label>
         <Section.Title>EasyPark's ALIVE!</Section.Title>
         <Section.Text>
