@@ -3,9 +3,11 @@
 import { useLayoutEffect, useState } from "react";
 
 const useScrollPosition = () => {
-  const [scrollPosition, setScrollPosition] = useState(window.scrollY);
+  const [scrollPosition, setScrollPosition] = useState(0);
 
   useLayoutEffect(() => {
+    setScrollPosition(window.scrollY);
+
     const handleScroll = () => {
       const position = window.scrollY;
       setScrollPosition(position);
