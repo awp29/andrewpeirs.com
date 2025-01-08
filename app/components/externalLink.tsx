@@ -11,6 +11,7 @@ const ExternalLink = (props) => {
         "border-b-2 border-[#4C64D9] border-dashed"
       )}
       href={to}
+      target="_blank"
     >
       <span
         className={classNames(

@@ -44,7 +44,9 @@ export default function Page() {
 
       <div className="flex gap-[12px] mt-[24px]">
         <EmailLink />
-        <ExternalLink to="test">LinkedIn</ExternalLink>
+        <ExternalLink to="https://www.linkedin.com/in/andrew-peirs">
+          LinkedIn
+        </ExternalLink>
         <ExternalLink to="test">CV</ExternalLink>
       </div>
 
@@ -55,7 +57,7 @@ export default function Page() {
             <Project.Title>EasyPark</Project.Title>
             <Project.Description>
               EasyPark is a project I worked on as part of the{" "}
-              <ExternalLink to="blah">
+              <ExternalLink to="https://coursecareers.com/explore/uiux">
                 Course Careers UI/UX design course
               </ExternalLink>
               . As a learning project I did everything myself, from User

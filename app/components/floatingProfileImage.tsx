@@ -32,6 +32,7 @@ const FloatingProfileImage = React.forwardRef(
             x: mousePosition.x,
             y: y + scrollPosition,
           });
+
           return;
         }
 
@@ -54,11 +55,11 @@ const FloatingProfileImage = React.forwardRef(
             transition: { ease: ["easeIn", "easeOut"], duration: 0.15 },
           },
         }}
-        className="absolute z-10 w-[128px] h-[128px] origin-center translate-x-[-50%] translate-y-[-50%]"
+        className="absolute z-10 w-[128px] h-[128px] origin-center translate-x-[-50%] translate-y-[-50%] cursor-none select-none"
       >
         <Image
           className={classNames(
-            "max-h-[128px] rounded-full object-cover cursor-none"
+            "max-h-[128px] rounded-full object-cover pointer-events-none"
           )}
           src="/images/me.jpg"
           alt="Profile image of the portfolio author Andrew Peirs"
