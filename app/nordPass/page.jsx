@@ -272,11 +272,20 @@ const Page = () => {
         <Section.Title>NordPass 3000</Section.Title>
       </Section>
 
+      <div className="w-full my-[32px]">
+        <iframe
+          className="border-1 border-[rgba(0, 0, 0, 0.1)] mx-auto max-w-[800px] w-full"
+          height="450"
+          src="https://embed.figma.com/design/eUJem0xZP5DXOAYDXaLF9J/NordPass-3000?node-id=0-1&embed-host=share"
+          allowFullScreen
+        ></iframe>
+      </div>
+
       <div className="w-full my-[64px]">
         <iframe
-          className="mx-auto max-w-[800px] w-full"
+          className="border-1 border-[rgba(0, 0, 0, 0.1)] mx-auto max-w-[800px] w-full"
           height="450"
-          src="https://embed.figma.com/proto/Y6wARWjLPOpNVjr5gZJYDG/EasyPark?node-id=373-1904&node-type=canvas&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=373%3A1904&embed-host=share"
+          src="https://embed.figma.com/proto/eUJem0xZP5DXOAYDXaLF9J/NordPass-3000?node-id=378-14614&p=f&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=378%3A14614&embed-host=share"
           allowFullScreen
         ></iframe>
       </div>
