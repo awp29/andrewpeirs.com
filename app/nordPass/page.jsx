@@ -9,13 +9,13 @@ import H1 from "app/components/caseStudy/H1";
 import Header from "app/components/caseStudy/Header";
 import OverflowImage from "app/components/caseStudy/OverflowImage";
 import ScrollToTopButton from "app/components/caseStudy/ScrollToTopButton";
-import H3 from "app/components/caseStudy/section/H3";
 import Section from "app/components/caseStudy/section/Section";
 import Title from "app/components/caseStudy/Title";
 import ExternalLink from "app/components/externalLink";
 import useScrollPosition from "app/hooks/useScrollPosition";
 import useScrollToTop from "app/hooks/useScrollToTop";
 import { createRef } from "react";
+import { twMerge } from "tailwind-merge";
 
 const Page = () => {
   const finalDesignsRef = createRef(null);
@@ -246,49 +246,29 @@ const Page = () => {
 
       <Section>
         <Section.Label>• REDESIGN</Section.Label>
-        <Section.Title>Before and after</Section.Title>
+        <Section.Title>High Fidelity Figma Designs</Section.Title>
+
+        <iframe
+          className="border-1 border-[rgba(0, 0, 0, 0.1)] mx-auto max-w-[800px] w-full"
+          height="600"
+          src="https://embed.figma.com/design/eUJem0xZP5DXOAYDXaLF9J/NordPass-3000?node-id=0-1&embed-host=share&starting-node-id=378-14614"
+          allowFullScreen
+        ></iframe>
       </Section>
-
-      <Section className="mb-[32px] md:mb-[24px]">
-        <H3>Passwords table</H3>
-      </Section>
-
-      <OverflowImage src="/images/nordPassRedesignCaseStudy/beforeAndAfter1.png" />
-
-      <Section className="mb-[32px] md:mb-[24px]">
-        <H3>Edit password</H3>
-      </Section>
-
-      <OverflowImage src="/images/nordPassRedesignCaseStudy/beforeAndAfter2.png" />
-
-      <Section className="mb-[32px] md:mb-[24px]">
-        <H3>Password generator</H3>
-      </Section>
-
-      <OverflowImage src="/images/nordPassRedesignCaseStudy/beforeAndAfter3.png" />
 
       <Section>
         <Section.Label>• PROTOTYPE</Section.Label>
         <Section.Title>NordPass 3000</Section.Title>
+
+        <div className="w-full my-[64px]">
+          <iframe
+            className="border-1 border-[rgba(0, 0, 0, 0.1)] mx-auto max-w-[800px] w-full"
+            height="600"
+            src="https://embed.figma.com/proto/eUJem0xZP5DXOAYDXaLF9J/NordPass-3000?node-id=378-14614&p=f&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=378%3A14614&embed-host=share"
+            allowFullScreen
+          ></iframe>
+        </div>
       </Section>
-
-      <div className="w-full my-[32px]">
-        <iframe
-          className="border-1 border-[rgba(0, 0, 0, 0.1)] mx-auto max-w-[800px] w-full"
-          height="450"
-          src="https://embed.figma.com/design/eUJem0xZP5DXOAYDXaLF9J/NordPass-3000?node-id=0-1&embed-host=share"
-          allowFullScreen
-        ></iframe>
-      </div>
-
-      <div className="w-full my-[64px]">
-        <iframe
-          className="border-1 border-[rgba(0, 0, 0, 0.1)] mx-auto max-w-[800px] w-full"
-          height="450"
-          src="https://embed.figma.com/proto/eUJem0xZP5DXOAYDXaLF9J/NordPass-3000?node-id=378-14614&p=f&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=378%3A14614&embed-host=share"
-          allowFullScreen
-        ></iframe>
-      </div>
 
       <H1>3. Conclusion</H1>
 
