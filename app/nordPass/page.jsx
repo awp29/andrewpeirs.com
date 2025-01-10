@@ -349,6 +349,16 @@ const Page = () => {
           </Section.BulletList>
         </Section.Text>
       </Section>
+
+      <Section>
+        <Section.Label>• WRAP UP</Section.Label>
+        <Section.Title>Final thoughts</Section.Title>
+        <Section.Text>
+          Redesigning NordPass has taught me that good UX is super important but
+          if you want users to see a product as professional UX alone won't do
+          it. You need great UI!
+        </Section.Text>
+      </Section>
     </>
   );
 };

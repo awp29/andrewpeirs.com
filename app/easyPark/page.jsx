@@ -372,7 +372,7 @@ const Page = () => {
 
         <div className="w-full my-[32px]">
           <iframe
-            className="mx-auto max-w-[800px] w-full"
+            className="border-1 border-[rgba(0, 0, 0, 0.1)] mx-auto max-w-[800px] w-full"
             height="450"
             src="https://embed.figma.com/design/Y6wARWjLPOpNVjr5gZJYDG/EasyPark?node-id=0-1&embed-host=share"
             allowFullScreen
@@ -381,7 +381,7 @@ const Page = () => {
 
         <div className="w-full my-[64px]">
           <iframe
-            className="mx-auto max-w-[800px] w-full"
+            className="border-1 border-[rgba(0, 0, 0, 0.1)] mx-auto max-w-[800px] w-full"
             height="450"
             src="https://embed.figma.com/proto/Y6wARWjLPOpNVjr5gZJYDG/EasyPark?node-id=373-1904&node-type=canvas&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=373%3A1904&embed-host=share"
             allowFullScreen

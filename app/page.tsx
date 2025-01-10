@@ -35,7 +35,7 @@ export default function Page() {
             Hello world!
           </h2>
           <h1 className="font-bold text-[40px] md:text-[56px]">
-            {`I'm an aspiring product designer with 10 years of coding Experience`}
+            {`I'm a designer and I'm pretty decent at coding too!`}
           </h1>
         </div>
 
@@ -47,7 +47,7 @@ export default function Page() {
         <ExternalLink to="https://www.linkedin.com/in/andrew-peirs">
           LinkedIn
         </ExternalLink>
-        <ExternalLink to="test">CV</ExternalLink>
+        {/* <ExternalLink to="test">CV</ExternalLink> */}
       </div>
 
       <div className="mt-[96px] md:mt-64">
@@ -56,13 +56,12 @@ export default function Page() {
             <Project.Header>01</Project.Header>
             <Project.Title>EasyPark</Project.Title>
             <Project.Description>
-              EasyPark is a project I worked on as part of the{" "}
+              This is a project I worked on as part of the{" "}
               <ExternalLink to="https://coursecareers.com/explore/uiux">
-                Course Careers UI/UX design course
-              </ExternalLink>
-              . As a learning project I did everything myself, from User
-              Interviews and surveys all the way to High-Fidelity designs and
-              prototyping.
+                Course Careers
+              </ExternalLink>{" "}
+              UI/UX design course. Learning all aspects of the UI/UX design
+              process.
             </Project.Description>
 
             <Project.CaseStudyLink to="/easyPark" />
@@ -74,10 +73,10 @@ export default function Page() {
         <Project>
           <Project.DetailsColumn>
             <Project.Header>02</Project.Header>
-            <Project.Title>Super Passwords</Project.Title>
+            <Project.Title>NordPass Redesign</Project.Title>
             <Project.Description>
-              Redesign of NordPass and LastPass because they are awful! Blah
-              blah blah, it made a pretty version instead because they are awful
+              I redesigned the NordPass web app as a way of practicing my design
+              skills.
             </Project.Description>
 
             <Project.CaseStudyLink to="/nordPass" />
@@ -86,7 +85,7 @@ export default function Page() {
           <Project.Image src="/images/nordPassRedesignProjectImage.jpg" />
         </Project>
 
-        <Project>
+        {/* <Project>
           <Project.DetailsColumn>
             <Project.Header>03</Project.Header>
             <Project.Title>SM-30</Project.Title>
@@ -99,7 +98,7 @@ export default function Page() {
           </Project.DetailsColumn>
 
           <Project.Image src="/images/superMinesweeperProjectImage.jpg" />
-        </Project>
+        </Project> */}
       </div>
     </div>
   );
