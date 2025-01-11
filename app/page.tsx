@@ -35,7 +35,7 @@ export default function Page() {
             Hello world!
           </h2>
           <h1 className="font-bold text-[40px] md:text-[56px]">
-            {`I'm Andrew. I like to design web products and and I'm pretty decent at coding too!`}
+            {`I'm Andrew. I like to design web products and and I'm not to bad at coidng either`}
           </h1>
         </div>
 
@@ -56,12 +56,12 @@ export default function Page() {
             <Project.Header>01</Project.Header>
             <Project.Title>EasyPark</Project.Title>
             <Project.Description>
-              This is a project I worked on as part of the{" "}
+              As part of the{" "}
               <ExternalLink to="https://coursecareers.com/explore/uiux">
                 Course Careers
               </ExternalLink>{" "}
-              UI/UX design course. Learning all aspects of the UI/UX design
-              process.
+              UI/UX design course, I built a car parking app, learning the
+              user-cnetered design process.
             </Project.Description>
 
             <Project.CaseStudyLink to="/easyPark" />
@@ -75,8 +75,7 @@ export default function Page() {
             <Project.Header>02</Project.Header>
             <Project.Title>NordPass Redesign</Project.Title>
             <Project.Description>
-              I redesigned the NordPass web app as a way of practicing my design
-              skills.
+              Redesigned NordPass web app to give it a minimal modern UI.
             </Project.Description>
 
             <Project.CaseStudyLink to="/nordPass" />
