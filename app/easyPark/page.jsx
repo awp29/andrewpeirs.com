@@ -152,7 +152,7 @@ const Page = () => {
         </Quote>
       </Section>
 
-      <Section>
+      <Section className="mb-[32px] md:mb-[48px]">
         <Section.Label>• AFFINITY MAP</Section.Label>
         <Section.Title>Wheres the UX?</Section.Title>
         <Section.Text>
@@ -161,9 +161,9 @@ const Page = () => {
           research has shown that users just do not like how these core features
           are implemented.
         </Section.Text>
-
-        <h1 className="font-bold mt-[32px]">NEED TO SORT OUT IMAGE</h1>
       </Section>
+
+      <Section.FullWidthImage src="/images/easyParkCaseStudy/affinityMap.png" />
 
       <Section>
         <Section.Label>• MAIN INSIGHT</Section.Label>
@@ -205,7 +205,7 @@ const Page = () => {
       >
         <div>
           <Image
-            src="/images/easyParkCaseStudy/personaAlexTaylor.jpg"
+            src="/images/easyParkCaseStudy/personaAlexTaylor.png"
             width={1512}
             height={982}
           />
@@ -373,7 +373,7 @@ const Page = () => {
         <div className="w-full my-[32px]">
           <iframe
             className="border-1 border-[rgba(0, 0, 0, 0.1)] mx-auto max-w-[800px] w-full"
-            height="450"
+            height="600"
             src="https://embed.figma.com/design/Y6wARWjLPOpNVjr5gZJYDG/EasyPark?node-id=0-1&embed-host=share"
             allowFullScreen
           ></iframe>
@@ -382,7 +382,7 @@ const Page = () => {
         <div className="w-full my-[64px]">
           <iframe
             className="border-1 border-[rgba(0, 0, 0, 0.1)] mx-auto max-w-[800px] w-full"
-            height="450"
+            height="600"
             src="https://embed.figma.com/proto/Y6wARWjLPOpNVjr5gZJYDG/EasyPark?node-id=373-1904&node-type=canvas&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=373%3A1904&embed-host=share"
             allowFullScreen
           ></iframe>

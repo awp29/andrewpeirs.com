@@ -15,7 +15,6 @@ import ExternalLink from "app/components/externalLink";
 import useScrollPosition from "app/hooks/useScrollPosition";
 import useScrollToTop from "app/hooks/useScrollToTop";
 import { createRef } from "react";
-import { twMerge } from "tailwind-merge";
 
 const Page = () => {
   const finalDesignsRef = createRef(null);

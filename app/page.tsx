@@ -35,7 +35,7 @@ export default function Page() {
             Hello world!
           </h2>
           <h1 className="font-bold text-[40px] md:text-[56px]">
-            {`I'm Andrew. I like to designer web products and and I'm pretty decent at coding too!`}
+            {`I'm Andrew. I like to design web products and and I'm pretty decent at coding too!`}
           </h1>
         </div>
 
