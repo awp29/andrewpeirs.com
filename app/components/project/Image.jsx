@@ -12,11 +12,11 @@ const Image = (props) => {
       )}
     >
       <NextImage
-        style={{ width: "100%", height: "auto" }}
-        className="object-contain m-auto aspect-video drop-shadow-lg"
+        className="w-full h-auto object-contain m-auto aspect-video drop-shadow-lg"
         src={src}
-        width={1000}
-        height={1000}
+        width="0"
+        height="0"
+        sizes="100vw"
       />
     </div>
   );

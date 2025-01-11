@@ -82,7 +82,7 @@ export default function Page() {
             <Project.CaseStudyLink to="/nordPass" />
           </Project.DetailsColumn>
 
-          <Project.Image src="/images/nordPassRedesignProjectImage.jpg" />
+          <Project.Image src="/images/nordPassRedesignProjectImage.png" />
         </Project>
 
         {/* <Project>
