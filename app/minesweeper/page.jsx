@@ -14,6 +14,9 @@ import ExternalLink from "app/components/externalLink";
 import useScrollPosition from "app/hooks/useScrollPosition";
 import useScrollToTop from "app/hooks/useScrollToTop";
 import { createRef } from "react";
+import Image from "next/image";
+import classNames from "classnames";
+import ViewLiveVersionButton from "./ViewLiveVersionButton";
 
 const Page = () => {
   const finalDesignsRef = createRef(null);
@@ -59,7 +62,7 @@ const Page = () => {
 
         <Section.JumpToFinalDesignsButton ref={finalDesignsRef} />
 
-        <h1 className="mt-[32px] font-bold">GIF OF GAME PLAYING</h1>
+        <Section.Image src="/images/minesweeperCaseStudy/minesweeper.gif" />
       </Section>
 
       <H1>1. Research</H1>
@@ -73,26 +76,77 @@ const Page = () => {
           personality to it.
         </Section.Text>
 
-        <Section.Text className="mt-[32px]">
-          <ExternalLink>Minesweeper online</ExternalLink> - Sticks to the
-          classic look and feel, focused on stats, leader boards and competition
-        </Section.Text>
+        {/* AP-TODO: TURN THIS INTO COMPONENTS */}
+        <div
+          className={classNames(
+            "flex flex-col gap-[48px] mt-[32px] mb-[96px]",
+            "md:mt-[32px] md:mb-[128px]"
+          )}
+        >
+          <div
+            className={classNames(
+              "flex-col flex gap-[20px] items-center",
+              "md:flex-row md:gap-[48px]"
+            )}
+          >
+            <div className="flex-1">
+              <Image
+                className="object-contain m-auto border-1 border-[#000D4D73] border-solid rounded-[8px] shadow-lg"
+                src="/images/minesweeperCaseStudy/classicMinesweeper.jpg"
+                width="800"
+                height="800"
+              />
+            </div>
 
-        <h1 className="mt-[32px] mb-[32px] font-bold">GIF OF GAME PLAYING</h1>
+            <Section.Text className="flex-1">
+              <ExternalLink>Minesweeper online</ExternalLink> - Sticks to the
+              classic look and feel, focused on stats, leader boards and
+              competition
+            </Section.Text>
+          </div>
 
-        <Section.Text>
-          <ExternalLink>Google minesweeper</ExternalLink> - Bit of a basic
-          design but has really good win/lose animations
-        </Section.Text>
+          <div
+            className={classNames(
+              "flex-col-reverse flex gap-[20px] items-center",
+              "md:flex-row md:gap-[48px]"
+            )}
+          >
+            <Section.Text className="flex-1">
+              <ExternalLink>Google minesweeper</ExternalLink> - Bit of a basic
+              design but has really good win/lose animations
+            </Section.Text>
 
-        <h1 className="mt-[32px] mb-[32px] font-bold">GIF OF GAME PLAYING</h1>
+            <div className="flex-1">
+              <Image
+                className="object-contain m-auto border-1 border-[#000D4D73] border-solid rounded-[8px] shadow-lg"
+                src="/images/minesweeperCaseStudy/googleMinesweeper.jpg"
+                width="800"
+                height="800"
+              />
+            </div>
+          </div>
 
-        <Section.Text>
-          <ExternalLink>Emoji minesweeper</ExternalLink> - Great design, it's
-          fun, it's vibrant and all designed using emojis
-        </Section.Text>
+          <div
+            className={classNames(
+              "flex-col flex gap-[20px] items-center",
+              "md:flex-row md:gap-[48px]"
+            )}
+          >
+            <div className="flex-1">
+              <Image
+                className="object-contain m-auto border-1 border-[#000D4D73] border-solid rounded-[8px] shadow-lg"
+                src="/images/minesweeperCaseStudy/emojiMinesweeper.jpg"
+                width="800"
+                height="800"
+              />
+            </div>
 
-        <h1 className="mt-[32px] font-bold">GIF OF GAME PLAYING</h1>
+            <Section.Text className="flex-1">
+              <ExternalLink>Emoji minesweeper</ExternalLink> - Great design,
+              it's fun, it's vibrant and all designed using emojis
+            </Section.Text>
+          </div>
+        </div>
       </Section>
 
       <Section className="mb-[32px] md:mb-[48px]">
@@ -106,7 +160,7 @@ const Page = () => {
           mood board
         </Section.Text>
 
-        <h1 className="mt-[32px] font-bold">MOOD BOARD IMAGE</h1>
+        <Section.Image src="/images/minesweeperCaseStudy/moodboard.jpg" />
       </Section>
 
       <Section className="mb-[32px] md:mb-[48px]">
@@ -118,7 +172,7 @@ const Page = () => {
           style of my favourite BraUn products.
         </Section.Text>
 
-        <h1 className="mt-[32px] font-bold">COLOR PALETTE IMAGE</h1>
+        <Section.Image src="/images/minesweeperCaseStudy/colorPalette.jpg" />
       </Section>
 
       <H1>2. Design</H1>
@@ -142,14 +196,12 @@ const Page = () => {
           </Section.BulletList>
         </Section.Text>
 
-        <h1 className="mt-[32px] font-bold">
-          IMAGE WITH STICKIES HERE EXPLAINING EACH SECTION OF THE GAME BOARD
-        </h1>
+        <Section.Image src="/images/minesweeperCaseStudy/gameBoard.jpg" />
       </Section>
 
       <Section className="mb-[32px] md:mb-[48px]">
         <Section.Title>The cells</Section.Title>
-        <Section.Text>
+        <Section.Text className="mb-[48px]">
           The game cells need to look and feel like they belong together but
           some need to blend in and others need to pop. To do that the visual
           hierarchy has to be solid.
@@ -158,7 +210,147 @@ const Page = () => {
           Each cell can be in 1 of 5 states
         </Section.Text>
 
-        <h1 className="mt-[32px] font-bold">NEED TO BUILD OUT THIS SECTION</h1>
+        <div
+          className={classNames(
+            "flex flex-col gap-[48px] mb-[96px]",
+            "md:mb-[128px] md:gap-[48px]"
+          )}
+        >
+          <div
+            className={classNames(
+              "flex flex-col gap-[24px] items-center",
+              "md:flex-row md:gap-[32px]"
+            )}
+          >
+            <Image
+              className={classNames(
+                "w-[120px] h-[120px]  object-contain m-auto border-1 border-[#000D4D73] border-solid rounded-[8px] shadow-lg",
+                "md:w-[140px] md:h-[140px]"
+              )}
+              src="/images/minesweeperCaseStudy/cellDefault.jpg"
+              width="140"
+              height="140"
+            />
+
+            <div>
+              <Section.Text className="font-bold mb-[4px]">
+                Default
+              </Section.Text>
+              <Section.Text>
+                It needs to be easily visible but not take attention away from
+                the other cells.
+              </Section.Text>
+            </div>
+          </div>
+
+          <div
+            className={classNames(
+              "flex flex-col gap-[24px] items-center",
+              "md:flex-row md:gap-[32px]"
+            )}
+          >
+            <Image
+              className={classNames(
+                "w-[120px] h-[120px]  object-contain m-auto border-1 border-[#000D4D73] border-solid rounded-[8px] shadow-lg",
+                "md:w-[140px] md:h-[140px]"
+              )}
+              src="/images/minesweeperCaseStudy/cellEmpty.jpg"
+              width="140"
+              height="140"
+            />
+
+            <div>
+              <Section.Text className="font-bold mb-[4px]">Empty</Section.Text>
+              <Section.Text>
+                It should blend into the background, the player should know it's
+                there but not take up much attention.
+              </Section.Text>
+            </div>
+          </div>
+
+          <div
+            className={classNames(
+              "flex flex-col gap-[24px] items-center",
+              "md:flex-row md:gap-[32px]"
+            )}
+          >
+            <Image
+              className={classNames(
+                "w-[120px] h-[120px]  object-contain m-auto border-1 border-[#000D4D73] border-solid rounded-[8px] shadow-lg",
+                "md:w-[140px] md:h-[140px]"
+              )}
+              src="/images/minesweeperCaseStudy/cellTouching.jpg"
+              width="140"
+              height="140"
+            />
+
+            <div>
+              <Section.Text className="font-bold mb-[4px]">
+                Touching
+              </Section.Text>
+              <Section.Text>
+                It needs to clearly communicate the number of mines it is
+                touching. This is important as it's giving the player key
+                information. A bold number indicates this.
+              </Section.Text>
+            </div>
+          </div>
+
+          <div
+            className={classNames(
+              "flex flex-col gap-[24px] items-center",
+              "md:flex-row md:gap-[32px]"
+            )}
+          >
+            <Image
+              className={classNames(
+                "w-[120px] h-[120px]  object-contain m-auto border-1 border-[#000D4D73] border-solid rounded-[8px] shadow-lg",
+                "md:w-[140px] md:h-[140px]"
+              )}
+              src="/images/minesweeperCaseStudy/cellMine.jpg"
+              width="140"
+              height="140"
+            />
+
+            <div>
+              <Section.Text className="font-bold mb-[4px]">Mine</Section.Text>
+              <Section.Text>
+                It needs to grab the players attention! If a player clicks a
+                mine it's game over and the player needs to know this. A red
+                mine on a white background contrasts against all the other cells
+                and jumps out at the player.
+              </Section.Text>
+            </div>
+          </div>
+
+          <div
+            className={classNames(
+              "flex flex-col gap-[24px] items-center",
+              "md:flex-row md:gap-[32px]"
+            )}
+          >
+            <Image
+              className={classNames(
+                "w-[120px] h-[120px]  object-contain m-auto border-1 border-[#000D4D73] border-solid rounded-[8px] shadow-lg",
+                "md:w-[140px] md:h-[140px]"
+              )}
+              src="/images/minesweeperCaseStudy/cellFlag.jpg"
+              width="140"
+              height="140"
+            />
+
+            <div>
+              <Section.Text className="font-bold mb-[4px]">
+                Flagged
+              </Section.Text>
+              <Section.Text>
+                This needs to stand out and clearly communicate it has been
+                marked but not overpower the touching and mine cells. A white
+                flag does this
+              </Section.Text>
+            </div>
+          </div>
+        </div>
       </Section>
 
       <Section className="mb-[32px] md:mb-[48px]">
@@ -169,19 +361,7 @@ const Page = () => {
           emojis for this as it gives the game a little bit more personality
         </Section.Text>
 
-        <h1 className="mt-[32px] font-bold">NEED IMAGE</h1>
-      </Section>
-
-      <Section className="mb-[32px] md:mb-[48px]">
-        <Section.Title>The flow</Section.Title>
-        <Section.Text>
-          I want it to be super quick and snappy to start a new game. I didn’t
-          want to slow down the flow with fancy win/lose animations or popups. I
-          decided to stick with the classic minesweeper flow as it allows a
-          player to get straight back into a game as quick as possible.
-        </Section.Text>
-
-        <h1 className="mt-[32px] font-bold">NEED IMAGE</h1>
+        <Section.Image src="/images/minesweeperCaseStudy/smileyFace.jpg" />
       </Section>
 
       <Section className="mb-[32px] md:mb-[48px]">
@@ -196,15 +376,7 @@ const Page = () => {
           that it does not take any of the players attention away from the game.
         </Section.Text>
 
-        <h1 className="mt-[32px] font-bold">NEED IMAGE</h1>
-      </Section>
-
-      <Section className="mb-[32px] md:mb-[48px]">
-        <Section.Label>• INSTRUCTIONS</Section.Label>
-        <Section.Title>Explain how I designed the instructions</Section.Title>
-        <Section.Text>TODO</Section.Text>
-
-        <h1 className="mt-[32px] font-bold">NEED IMAGE</h1>
+        <Section.Image src="/images/minesweeperCaseStudy/layout.jpg" />
       </Section>
 
       <Section className="mb-[32px] md:mb-[48px]">
@@ -243,6 +415,23 @@ const Page = () => {
 
       <div ref={finalDesignsRef} />
       <H1>3. Final Designs</H1>
+
+      <Section className="mb-[32px] md:mb-[48px]">
+        <Section.Label>• PRODUCTION</Section.Label>
+        <Section.Title>SM-30</Section.Title>
+        <Section.Text>
+          Check out the live version below or follow the link to the production
+          site
+        </Section.Text>
+        <ViewLiveVersionButton />
+
+        <iframe
+          className="border-1 border-[#000D4D73] border-solid rounded-[8px] shadow-lg mx-auto max-w-[800px] w-full mt-[32px]"
+          height="800"
+          src="https://sm-30.vercel.app/"
+          allowFullScreen
+        ></iframe>
+      </Section>
 
       <H1>4. Conclusion</H1>
 

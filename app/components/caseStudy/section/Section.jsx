@@ -1,4 +1,3 @@
-import classNames from "classnames";
 import Label from "./Label";
 import Title from "./Title";
 import Text from "./Text";
@@ -11,6 +10,7 @@ import BulletList from "./BulletList";
 import React from "react";
 import JumpToFinalDesignsButton from "./JumpToFinalDesigns";
 import { twMerge } from "tailwind-merge";
+import Image from "./Image";
 
 const Section = React.forwardRef((props, ref) => {
   const { className, children } = props;
@@ -37,6 +37,7 @@ Section.TwoColumns = TwoColumns;
 Section.TextColumn = TextColumn;
 Section.ImageColumn = ImageColumn;
 Section.FullWidthImage = FullWidthImage;
+Section.Image = Image;
 Section.H3 = H3;
 Section.BulletList = BulletList;
 Section.JumpToFinalDesignsButton = JumpToFinalDesignsButton;

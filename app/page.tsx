@@ -47,7 +47,7 @@ export default function Page() {
         <ExternalLink to="https://www.linkedin.com/in/andrew-peirs">
           LinkedIn
         </ExternalLink>
-        {/* <ExternalLink to="test">CV</ExternalLink> */}
+        <ExternalLink to="test">CV</ExternalLink>
       </div>
 
       <div className="mt-[96px] md:mt-64">
@@ -84,7 +84,7 @@ export default function Page() {
           <Project.Image src="/images/nordPassRedesignProjectImage.png" />
         </Project>
 
-        {/* <Project>
+        <Project>
           <Project.DetailsColumn>
             <Project.Header>03</Project.Header>
             <Project.Title>SM-30</Project.Title>
@@ -97,7 +97,7 @@ export default function Page() {
           </Project.DetailsColumn>
 
           <Project.Image src="/images/superMinesweeperProjectImage.jpg" />
-        </Project> */}
+        </Project>
       </div>
     </div>
   );
