@@ -7,7 +7,8 @@ const Image = (props) => {
   return (
     <div
       className={classNames(
-        "flex bg-[#26B0FF0D] flex-1 p-[32px]",
+        "flex bg-[#26B0FF0D] flex-1 p-[8px]",
+        "md:p-[16px]",
         "lg:col-span-6"
       )}
     >

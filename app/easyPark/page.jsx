@@ -9,16 +9,15 @@ import Details from "app/components/caseStudy/Details";
 import DetailsColumn from "app/components/caseStudy/DetailsColumn";
 import DetailsLabel from "app/components/caseStudy/DetailsLabel";
 import DetailsText from "app/components/caseStudy/DetailsText";
-import OverflowImage from "app/components/caseStudy/OverflowImage";
 import Section from "app/components/caseStudy/section/Section";
 import H1 from "app/components/caseStudy/H1";
 import Survey from "./components/Survey";
 import Quote from "app/components/caseStudy/quote/Quote";
 import { twMerge } from "tailwind-merge";
-import Image from "next/image";
 import ExternalLink from "app/components/externalLink";
 import useScrollToTop from "app/hooks/useScrollToTop";
 import BackButton from "app/components/BackButton";
+import classNames from "classnames";
 
 const Page = () => {
   const finalDesignsRef = createRef(null);
@@ -52,7 +51,45 @@ const Page = () => {
         </Details>
       </Header>
 
-      <OverflowImage src="/images/easyParkCaseStudy/hero.png" />
+      <div
+        className={classNames(
+          "flex flex-1 gap-[8px] mb-[96px] mx-[16px] max-w-[1512px]",
+          "md:gap-[16px] md:mb-[196px] md:px-[16px] md:mx-auto",
+          "lg:gap-[32px] lg:px-[32px]"
+        )}
+      >
+        <div className="flex-1">
+          <img
+            className={classNames("drop-shadow-xl")}
+            src="/images/easyParkCaseStudy/screenNearByParking.png"
+            alt="Screenshot of the EasyPark app showing a list of car parking spaces"
+          />
+        </div>
+
+        <div className="flex-1">
+          <img
+            className={classNames("drop-shadow-lg")}
+            src="/images/easyParkCaseStudy/screenHome.png"
+            alt="Screenshot of the EasyPark app showing a map with car parking spaces highlighted"
+          />
+        </div>
+
+        <div className="flex-1">
+          <img
+            className={classNames("drop-shadow-lg")}
+            src="/images/easyParkCaseStudy/screenViewCarPark.png"
+            alt="Screenshot of the EasyPark app showing details about a car park the user has selected"
+          />
+        </div>
+
+        <div className="flex-1">
+          <img
+            className={classNames("drop-shadow-lg")}
+            src="/images/easyParkCaseStudy/screenExtendParking.png"
+            alt="Screenshot of the EasyPark app showing the user how much time they have left at their space"
+          />
+        </div>
+      </div>
 
       <Section>
         <Section.Label>• THE PROBLEM</Section.Label>
@@ -163,7 +200,7 @@ const Page = () => {
         </Section.Text>
       </Section>
 
-      <Section.FullWidthImage src="/images/easyParkCaseStudy/affinityMap.png" />
+      <Section.FullWidthImage src="/images/easyParkCaseStudy/affinityMap.jpg" />
 
       <Section>
         <Section.Label>• MAIN INSIGHT</Section.Label>
@@ -203,19 +240,17 @@ const Page = () => {
           "md:flex-row md:mb-[128px] md:max-w-[1024px] mx-auto"
         )}
       >
-        <div>
-          <Image
-            src="/images/easyParkCaseStudy/personaAlexTaylor.png"
-            width={1512}
-            height={982}
+        <div className="flex-1">
+          <img
+            className="border-1 border-[#000D4D73] border-solid rounded-[8px] shadow-lg"
+            src="/images/easyParkCaseStudy/personaAlexTaylor.jpg"
           />
         </div>
 
-        <div>
-          <Image
-            src="/images/easyParkCaseStudy/personaSamMorgan.png"
-            width={1512}
-            height={982}
+        <div className="flex-1">
+          <img
+            className="border-1 border-[#000D4D73] border-solid rounded-[8px] shadow-lg"
+            src="/images/easyParkCaseStudy/personaSamMorgan.jpg"
           />
         </div>
       </div>
@@ -237,7 +272,7 @@ const Page = () => {
         </Section.Text>
       </Section>
 
-      <Section.FullWidthImage src="/images/easyParkCaseStudy/empathyMap.png" />
+      <Section.FullWidthImage src="/images/easyParkCaseStudy/empathyMap.jpg" />
 
       <Section className="mb-[32px] md:mb-[48px]">
         <Section.Label>• USER JOURNEY MAP</Section.Label>
@@ -251,7 +286,7 @@ const Page = () => {
         </Section.Text>
       </Section>
 
-      <Section.FullWidthImage src="/images/easyParkCaseStudy/customerJourneyMap.png" />
+      <Section.FullWidthImage src="/images/easyParkCaseStudy/customerJourneyMap.jpg" />
 
       <H1>3. Designing EasyPark</H1>
 
@@ -260,7 +295,7 @@ const Page = () => {
         <Section.Title>Payments is the core feature</Section.Title>
       </Section>
 
-      <Section.FullWidthImage src="/images/easyParkCaseStudy/taskFlows.png" />
+      <Section.FullWidthImage src="/images/easyParkCaseStudy/taskFlows.jpg" />
 
       <Section className="mb-[32px] md:mb-[48px]">
         <Section.H3>The payment flow</Section.H3>
@@ -289,7 +324,7 @@ const Page = () => {
         </Section.BulletList>
       </Section>
 
-      <Section.FullWidthImage src="/images/easyParkCaseStudy/paymentFlow.png" />
+      <Section.FullWidthImage src="/images/easyParkCaseStudy/paymentFlow.jpg" />
 
       <Section className="mb-[32px] md:mb-[48px]">
         <Section.H3 className="mt-[64px] md:mt-[96px]">
@@ -303,7 +338,7 @@ const Page = () => {
         </Section.Text>
       </Section>
 
-      <Section.FullWidthImage src="/images/easyParkCaseStudy/findingCarParkFlow.png" />
+      <Section.FullWidthImage src="/images/easyParkCaseStudy/findingCarParkFlow.jpg" />
 
       <Section className="mb-[32px] md:mb-[48px]">
         <Section.H3 className="mt-[64px] md:mt-[96px]">Pay Now</Section.H3>
@@ -315,20 +350,58 @@ const Page = () => {
         </Section.Text>
       </Section>
 
-      <Section.FullWidthImage src="/images/easyParkCaseStudy/payNowFlow.png" />
+      <Section.FullWidthImage src="/images/easyParkCaseStudy/payNowFlow.jpg" />
 
-      <Section>
+      <Section className="mb-[32px] md:mb-[48px]">
         <Section.Label>• SKETCHES + WIREFRAMES</Section.Label>
-        <Section.Title>What works? what doesn’t?</Section.Title>
+        <Section.Title>What works? what doesn't?</Section.Title>
         <Section.Text>
           I have a ton of ideas on how Payments, Finding a car park and Pay now
-          should look and feel but what is right and wrong? I don’t know. I
+          should look and feel but what is right and wrong? I dont know. I
           iterated over a bunch of sketches and wireframes to quickly figure out
-          what worked and what didn’t work for these features.
+          what worked and what didn't work for these features.
         </Section.Text>
       </Section>
 
-      <OverflowImage src="/images/easyParkCaseStudy/sketches.png" />
+      <div
+        className={classNames(
+          "flex flex-1 gap-[8px] mb-[96px] mx-[16px] max-w-[1512px]",
+          "md:gap-[16px] md:mb-[196px] md:px-[16px] md:mx-auto",
+          "lg:gap-[32px] lg:px-[32px]"
+        )}
+      >
+        <div className="flex-1">
+          <img
+            className={classNames("drop-shadow-xl")}
+            src="/images/easyParkCaseStudy/sketchSelectVehicle.png"
+            alt="Screenshot of the EasyPark app showing a list of car parking spaces"
+          />
+        </div>
+
+        <div className="flex-1">
+          <img
+            className={classNames("drop-shadow-lg")}
+            src="/images/easyParkCaseStudy/sketchPaymentSuccess.png"
+            alt="Screenshot of the EasyPark app showing a map with car parking spaces highlighted"
+          />
+        </div>
+
+        <div className="flex-1">
+          <img
+            className={classNames("drop-shadow-lg")}
+            src="/images/easyParkCaseStudy/sketchSelectPayment.png"
+            alt="Screenshot of the EasyPark app showing details about a car park the user has selected"
+          />
+        </div>
+
+        <div className="flex-1">
+          <img
+            className={classNames("drop-shadow-lg")}
+            src="/images/easyParkCaseStudy/sketchPaymentSummary.png"
+            alt="Screenshot of the EasyPark app showing the user how much time they have left at their space"
+          />
+        </div>
+      </div>
 
       <H1>4. Bringing EasyPark to life!</H1>
 
@@ -358,7 +431,7 @@ const Page = () => {
         </Section.Text>
       </Section>
 
-      <Section.FullWidthImage src="/images/easyParkCaseStudy/practicalUI.png" />
+      <Section.FullWidthImage src="/images/easyParkCaseStudy/practicalUI.jpg" />
 
       <div ref={finalDesignsRef} />
       <Section>
@@ -410,7 +483,15 @@ const Page = () => {
         </Section.Text>
       </Section>
 
-      <Section.FullWidthImage src="/images/easyParkCaseStudy/payNowBeforeAndAfter.png" />
+      <div className="px-[16px] md:mx-auto md:max-w-[840px]">
+        <img
+          className={twMerge(
+            "w-full h-auto mt-[32px] mb-[96px]",
+            "md:mb-[128px] md:max-w-[840px]"
+          )}
+          src="/images/easyParkCaseStudy/payNowBeforeAndAfter.png"
+        />
+      </div>
 
       <H1>6. Conclusion</H1>
 
@@ -468,7 +549,7 @@ const Page = () => {
           <li>
             <Section.Text>
               <span className="font-bold">Design for users not yourself.</span>{" "}
-              It’s not about what you want, it's about what your user's want,
+              It's not about what you want, it's about what your user's want,
               thats why User personas are so important. They allow you to put
               yourself into your users shoes and to make design decisions that
               are the best for them.

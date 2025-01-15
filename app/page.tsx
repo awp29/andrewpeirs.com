@@ -7,6 +7,7 @@ import EmailLink from "./components/emailLink";
 import ExternalLink from "./components/externalLink";
 import Project from "./components/project/Project";
 import { ibm } from "app/fonts";
+import Image from "next/image";
 
 export default function Page() {
   const headerRef = useRef(null);
@@ -47,7 +48,7 @@ export default function Page() {
         <ExternalLink to="https://www.linkedin.com/in/andrew-peirs">
           LinkedIn
         </ExternalLink>
-        <ExternalLink to="test">CV</ExternalLink>
+        <ExternalLink to="/APSeniorCV.pdf">CV</ExternalLink>
       </div>
 
       <div className="mt-[96px] md:mt-64">
@@ -62,7 +63,45 @@ export default function Page() {
             <Project.CaseStudyLink to="/easyPark" />
           </Project.DetailsColumn>
 
-          <Project.Image src="/images/easyParkProjectImage.png" />
+          <div
+            className={classNames(
+              "flex bg-[#26B0FF0D] flex-1 p-[16px] gap-[8px]",
+              "md:p-[32px] md:gap-[16px]",
+              "lg:col-span-6"
+            )}
+          >
+            <div className="flex-1">
+              <img
+                className={classNames("drop-shadow-xl")}
+                src="/images/easyParkCaseStudy/screenNearByParking.png"
+                alt="Screenshot of the EasyPark app showing a list of car parking spaces"
+              />
+            </div>
+
+            <div className="flex-1">
+              <img
+                className={classNames("drop-shadow-lg")}
+                src="/images/easyParkCaseStudy/screenHome.png"
+                alt="Screenshot of the EasyPark app showing a map with car parking spaces highlighted"
+              />
+            </div>
+
+            <div className="flex-1">
+              <img
+                className={classNames("drop-shadow-lg")}
+                src="/images/easyParkCaseStudy/screenViewCarPark.png"
+                alt="Screenshot of the EasyPark app showing details about a car park the user has selected"
+              />
+            </div>
+
+            <div className="flex-1">
+              <img
+                className={classNames("drop-shadow-lg")}
+                src="/images/easyParkCaseStudy/screenExtendParking.png"
+                alt="Screenshot of the EasyPark app showing the user how much time they have left at their space"
+              />
+            </div>
+          </div>
         </Project>
 
         <Project>
@@ -77,7 +116,22 @@ export default function Page() {
             <Project.CaseStudyLink to="/nordPass" />
           </Project.DetailsColumn>
 
-          <Project.Image src="/images/nordPassRedesignProjectImage.png" />
+          <div
+            className={classNames(
+              "flex bg-[#26B0FF0D] flex-1 p-[16px]",
+              "md:p-[32px]",
+              "lg:col-span-6"
+            )}
+          >
+            <img
+              className={classNames(
+                "border-1 border-[#000D4D73] border-solid rounded-[8px] shadow-lg",
+                "lg:col-span-6"
+              )}
+              src="/images/nordPassRedesignCaseStudy/nordPassRedesignProjectImage.jpg"
+              alt="Screenshot of the NordPass app showing a table of passwords"
+            />
+          </div>
         </Project>
 
         <Project>
@@ -91,7 +145,22 @@ export default function Page() {
             <Project.CaseStudyLink to="/minesweeper" />
           </Project.DetailsColumn>
 
-          <Project.Image src="/images/superMinesweeperProjectImage.jpg" />
+          <div
+            className={classNames(
+              "flex bg-[#26B0FF0D] flex-1 p-[16px]",
+              "md:p-[32px]",
+              "lg:col-span-6"
+            )}
+          >
+            <img
+              className={classNames(
+                "border-1 border-[#000D4D73] border-solid rounded-[8px] shadow-lg",
+                "lg:col-span-6"
+              )}
+              src="/images/minesweeperCaseStudy/minesweeper.gif"
+              alt="Screenshot of Super Minesweeper showing the game playing"
+            />
+          </div>
         </Project>
       </div>
     </div>
