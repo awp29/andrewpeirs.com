@@ -32,10 +32,10 @@ export default function Page() {
               "text-[#C73A3A] text-[20px] md:text-[32px]"
             )}
           >
-            Hello world!
+            Hey! I'm Andrew.
           </h2>
-          <h1 className="font-bold text-[40px] md:text-[56px]">
-            {`I'm Andrew. I like to design web products and and I'm not to bad at coidng either`}
+          <h1 className="font-bold text-[40px] md:text-[56px] text-[#000626F2]">
+            I make accessible, pixel perfect web apps.
           </h1>
         </div>
 
@@ -56,12 +56,7 @@ export default function Page() {
             <Project.Header>01</Project.Header>
             <Project.Title>EasyPark</Project.Title>
             <Project.Description>
-              As part of the{" "}
-              <ExternalLink to="https://coursecareers.com/explore/uiux">
-                Course Careers
-              </ExternalLink>{" "}
-              UI/UX design course, I built a car parking app, learning the
-              user-cnetered design process.
+              A learning project to get my head into user-centered design
             </Project.Description>
 
             <Project.CaseStudyLink to="/easyPark" />
@@ -75,7 +70,8 @@ export default function Page() {
             <Project.Header>02</Project.Header>
             <Project.Title>NordPass Redesign</Project.Title>
             <Project.Description>
-              Redesigned NordPass web app to give it a minimal modern UI.
+              An update to the NordPass web app to give it a modern look and
+              feel
             </Project.Description>
 
             <Project.CaseStudyLink to="/nordPass" />
@@ -89,8 +85,7 @@ export default function Page() {
             <Project.Header>03</Project.Header>
             <Project.Title>SM-30</Project.Title>
             <Project.Description>
-              Super Minesweeper 3000, inspired by old school BraUn products.
-              Trying to create that aesthic
+              Minesweeper clone inspired by the BraUn products of Dieter Rams
             </Project.Description>
 
             <Project.CaseStudyLink to="/minesweeper" />
