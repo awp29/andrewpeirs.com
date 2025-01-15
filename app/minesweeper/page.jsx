@@ -413,9 +413,9 @@ const Page = () => {
         </Section.Text>
       </Section>
 
-      <div ref={finalDesignsRef} />
       <H1>3. Final Designs</H1>
 
+      <div ref={finalDesignsRef} />
       <Section className="mb-[32px] md:mb-[48px]">
         <Section.Label>• PRODUCTION</Section.Label>
         <Section.Title>SM-30</Section.Title>

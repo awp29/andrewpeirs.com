@@ -7,14 +7,32 @@ import DetailsLabel from "app/components/caseStudy/DetailsLabel";
 import DetailsText from "app/components/caseStudy/DetailsText";
 import H1 from "app/components/caseStudy/H1";
 import Header from "app/components/caseStudy/Header";
-import OverflowImage from "app/components/caseStudy/OverflowImage";
 import ScrollToTopButton from "app/components/caseStudy/ScrollToTopButton";
 import Section from "app/components/caseStudy/section/Section";
 import Title from "app/components/caseStudy/Title";
 import ExternalLink from "app/components/externalLink";
 import useScrollPosition from "app/hooks/useScrollPosition";
 import useScrollToTop from "app/hooks/useScrollToTop";
+import classNames from "classnames";
 import { createRef } from "react";
+import { twMerge } from "tailwind-merge";
+
+const AnnotatedImage = (props) => {
+  const { className, src } = props;
+
+  return (
+    <div className="px-[16px] md:mx-auto md:max-w-[840px]">
+      <img
+        className={twMerge(
+          "w-full h-auto mt-[32px] mb-[96px]",
+          "md:mb-[128px] md:max-w-[840px]",
+          className
+        )}
+        src={src}
+      />
+    </div>
+  );
+};
 
 const Page = () => {
   const finalDesignsRef = createRef(null);
@@ -48,7 +66,33 @@ const Page = () => {
         </Details>
       </Header>
 
-      <OverflowImage src="/images/nordPassRedesignCaseStudy/hero.png" />
+      <div
+        className={classNames(
+          "flex flex-col flex-1 gap-[8px] mb-[96px] mx-[16px] max-w-[1512px]",
+          "md:flex-row md:gap-[16px] md:mb-[196px] md:px-[16px] md:mx-auto",
+          "lg:gap-[16px] lg:px-[32px]"
+        )}
+      >
+        <div className="flex-1">
+          <img
+            className={classNames(
+              "border-1 border-[#000D4D73] border-solid rounded-[8px] shadow-lg"
+            )}
+            src="/images/nordPassRedesignCaseStudy/screenPasswords.jpg"
+            alt="Screenshot of the EasyPark app showing a list of car parking spaces"
+          />
+        </div>
+
+        <div className="flex-1 hidden md:block">
+          <img
+            className={classNames(
+              "border-1 border-[#000D4D73] border-solid rounded-[8px] shadow-lg"
+            )}
+            src="/images/nordPassRedesignCaseStudy/screenPasswordGenerator.jpg"
+            alt="Screenshot of the EasyPark app showing a list of car parking spaces"
+          />
+        </div>
+      </div>
 
       <Section className="mb-[32px] md:mb-[48px]">
         <Section.Label>• NORDPASS</Section.Label>
@@ -60,7 +104,7 @@ const Page = () => {
         </Section.Text>
       </Section>
 
-      <Section.FullWidthImage src="/images/nordPassRedesignCaseStudy/nordPass.png" />
+      <Section.FullWidthImage src="/images/nordPassRedesignCaseStudy/nordPass.jpg" />
 
       <Section className="mb-[32px] md:mb-[48px]">
         <Section.Label>• THE PROBLEM</Section.Label>
@@ -88,7 +132,33 @@ const Page = () => {
         </Section.Text>
       </Section>
 
-      <OverflowImage src="/images/nordPassRedesignCaseStudy/nordPassUI.png" />
+      <div
+        className={classNames(
+          "flex flex-col flex-1 gap-[8px] mb-[96px] mx-[16px] max-w-[1512px]",
+          "md:flex-row md:gap-[16px] md:mb-[196px] md:px-[16px] md:mx-auto",
+          "lg:gap-[16px] lg:px-[32px]"
+        )}
+      >
+        <div className="flex-1">
+          <img
+            className={classNames(
+              "border-1 border-[#000D4D73] border-solid rounded-[8px] shadow-lg"
+            )}
+            src="/images/nordPassRedesignCaseStudy/nordPassAllItems.jpg"
+            alt="Screenshot of the EasyPark app showing a list of car parking spaces"
+          />
+        </div>
+
+        <div className="flex-1 hidden md:block">
+          <img
+            className={classNames(
+              "border-1 border-[#000D4D73] border-solid rounded-[8px] shadow-lg"
+            )}
+            src="/images/nordPassRedesignCaseStudy/nordPassEdit.jpg"
+            alt="Screenshot of the EasyPark app showing a list of car parking spaces"
+          />
+        </div>
+      </div>
 
       <Section>
         <Section.Label>• THE SOLUTION</Section.Label>
@@ -156,7 +226,33 @@ const Page = () => {
         </Section.Text>
       </Section>
 
-      <OverflowImage src="/images/nordPassRedesignCaseStudy/redesignScreens.png" />
+      <div
+        className={classNames(
+          "flex flex-col flex-1 gap-[8px] mb-[96px] mx-[16px] max-w-[1512px]",
+          "md:flex-row md:gap-[16px] md:mb-[196px] md:px-[16px] md:mx-auto",
+          "lg:gap-[16px] lg:px-[32px]"
+        )}
+      >
+        <div className="flex-1">
+          <img
+            className={classNames(
+              "border-1 border-[#000D4D73] border-solid rounded-[8px] shadow-lg"
+            )}
+            src="/images/nordPassRedesignCaseStudy/screenTrash.jpg"
+            alt="Screenshot of the EasyPark app showing a list of car parking spaces"
+          />
+        </div>
+
+        <div className="flex-1 hidden md:block">
+          <img
+            className={classNames(
+              "border-1 border-[#000D4D73] border-solid rounded-[8px] shadow-lg"
+            )}
+            src="/images/nordPassRedesignCaseStudy/screenEdit.jpg"
+            alt="Screenshot of the EasyPark app showing a list of car parking spaces"
+          />
+        </div>
+      </div>
 
       <Section className="mb-[32px] md:mb-[48px]">
         <Section.Label>• UX</Section.Label>
@@ -168,11 +264,11 @@ const Page = () => {
         </Section.Text>
       </Section>
 
-      <Section.FullWidthImage
-        className="md:mb-[48px]"
+      <AnnotatedImage
+        className="mb-[24px] md:mb-[48px]"
         src="/images/nordPassRedesignCaseStudy/uxImage1.png"
       />
-      <Section.FullWidthImage src="/images/nordPassRedesignCaseStudy/uxImage2.png" />
+      <AnnotatedImage src="/images/nordPassRedesignCaseStudy/uxImage2.png" />
 
       <Section className="mb-[32px] md:mb-[48px]">
         <Section.Label>• FORMS</Section.Label>
@@ -185,7 +281,7 @@ const Page = () => {
         </Section.Text>
       </Section>
 
-      <Section.FullWidthImage src="/images/nordPassRedesignCaseStudy/formImage1.png" />
+      <AnnotatedImage src="/images/nordPassRedesignCaseStudy/formImage1.png" />
 
       <Section className="mb-[32px] md:mb-[48px]">
         <Section.Label>• COPY</Section.Label>
@@ -197,11 +293,11 @@ const Page = () => {
         </Section.Text>
       </Section>
 
-      <Section.FullWidthImage
-        className="md:mb-[48px]"
+      <AnnotatedImage
+        className="mb-[24px] md:mb-[48px]"
         src="/images/nordPassRedesignCaseStudy/copyImage1.png"
       />
-      <Section.FullWidthImage src="/images/nordPassRedesignCaseStudy/copyImage2.png" />
+      <AnnotatedImage src="/images/nordPassRedesignCaseStudy/copyImage2.png" />
 
       <Section className="mb-[32px] md:mb-[48px]">
         <Section.Label>• FEEDBACK</Section.Label>
@@ -214,11 +310,11 @@ const Page = () => {
         </Section.Text>
       </Section>
 
-      <Section.FullWidthImage
-        className="md:mb-[48px]"
+      <AnnotatedImage
+        className="mb-[24px] md:mb-[48px]"
         src="/images/nordPassRedesignCaseStudy/feedbackImage1.png"
       />
-      <Section.FullWidthImage src="/images/nordPassRedesignCaseStudy/feedbackImage2.png" />
+      <AnnotatedImage src="/images/nordPassRedesignCaseStudy/feedbackImage2.png" />
 
       <Section className="mb-[32px] md:mb-[48px]">
         <Section.Label>• EDGE CASES</Section.Label>
@@ -231,18 +327,15 @@ const Page = () => {
         </Section.Text>
       </Section>
 
-      <Section.FullWidthImage
-        className="md:mb-[48px]"
+      <AnnotatedImage
+        className="mb-[24px] md:mb-[48px]"
         src="/images/nordPassRedesignCaseStudy/edgeCaseImage1.png"
       />
-      <Section.FullWidthImage
-        className="md:mb-[48px]"
-        src="/images/nordPassRedesignCaseStudy/edgeCaseImage2.png"
-      />
+      <AnnotatedImage src="/images/nordPassRedesignCaseStudy/edgeCaseImage2.png" />
 
-      <div ref={finalDesignsRef} />
       <H1>2. Final Designs</H1>
 
+      <div ref={finalDesignsRef} />
       <Section>
         <Section.Label>• REDESIGN</Section.Label>
         <Section.Title>High Fidelity Figma Designs</Section.Title>
