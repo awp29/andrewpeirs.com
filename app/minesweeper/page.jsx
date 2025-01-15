@@ -90,11 +90,9 @@ const Page = () => {
             )}
           >
             <div className="flex-1">
-              <Image
+              <img
                 className="object-contain m-auto border-1 border-[#000D4D73] border-solid rounded-[8px] shadow-lg"
                 src="/images/minesweeperCaseStudy/classicMinesweeper.jpg"
-                width="800"
-                height="800"
               />
             </div>
 
@@ -117,11 +115,9 @@ const Page = () => {
             </Section.Text>
 
             <div className="flex-1">
-              <Image
+              <img
                 className="object-contain m-auto border-1 border-[#000D4D73] border-solid rounded-[8px] shadow-lg"
                 src="/images/minesweeperCaseStudy/googleMinesweeper.jpg"
-                width="800"
-                height="800"
               />
             </div>
           </div>
@@ -133,11 +129,9 @@ const Page = () => {
             )}
           >
             <div className="flex-1">
-              <Image
+              <img
                 className="object-contain m-auto border-1 border-[#000D4D73] border-solid rounded-[8px] shadow-lg"
                 src="/images/minesweeperCaseStudy/emojiMinesweeper.jpg"
-                width="800"
-                height="800"
               />
             </div>
 
@@ -222,14 +216,12 @@ const Page = () => {
               "md:flex-row md:gap-[32px]"
             )}
           >
-            <Image
+            <img
               className={classNames(
                 "w-[120px] h-[120px]  object-contain m-auto border-1 border-[#000D4D73] border-solid rounded-[8px] shadow-lg",
                 "md:w-[140px] md:h-[140px]"
               )}
               src="/images/minesweeperCaseStudy/cellDefault.jpg"
-              width="140"
-              height="140"
             />
 
             <div>
@@ -249,14 +241,12 @@ const Page = () => {
               "md:flex-row md:gap-[32px]"
             )}
           >
-            <Image
+            <img
               className={classNames(
                 "w-[120px] h-[120px]  object-contain m-auto border-1 border-[#000D4D73] border-solid rounded-[8px] shadow-lg",
                 "md:w-[140px] md:h-[140px]"
               )}
               src="/images/minesweeperCaseStudy/cellEmpty.jpg"
-              width="140"
-              height="140"
             />
 
             <div>
@@ -274,14 +264,12 @@ const Page = () => {
               "md:flex-row md:gap-[32px]"
             )}
           >
-            <Image
+            <img
               className={classNames(
                 "w-[120px] h-[120px]  object-contain m-auto border-1 border-[#000D4D73] border-solid rounded-[8px] shadow-lg",
                 "md:w-[140px] md:h-[140px]"
               )}
               src="/images/minesweeperCaseStudy/cellTouching.jpg"
-              width="140"
-              height="140"
             />
 
             <div>
@@ -302,14 +290,12 @@ const Page = () => {
               "md:flex-row md:gap-[32px]"
             )}
           >
-            <Image
+            <img
               className={classNames(
                 "w-[120px] h-[120px]  object-contain m-auto border-1 border-[#000D4D73] border-solid rounded-[8px] shadow-lg",
                 "md:w-[140px] md:h-[140px]"
               )}
               src="/images/minesweeperCaseStudy/cellMine.jpg"
-              width="140"
-              height="140"
             />
 
             <div>
@@ -329,14 +315,12 @@ const Page = () => {
               "md:flex-row md:gap-[32px]"
             )}
           >
-            <Image
+            <img
               className={classNames(
                 "w-[120px] h-[120px]  object-contain m-auto border-1 border-[#000D4D73] border-solid rounded-[8px] shadow-lg",
                 "md:w-[140px] md:h-[140px]"
               )}
               src="/images/minesweeperCaseStudy/cellFlag.jpg"
-              width="140"
-              height="140"
             />
 
             <div>
