@@ -185,7 +185,7 @@ const Page = () => {
             “My ideal parking app is one I never have to open. I park up, it
             automatically pays for parking and I can get on with my day”
           </Quote.Text>
-          <Quote.Author>MARCO SANS</Quote.Author>
+          <Quote.Author>MARCO ANGELO</Quote.Author>
         </Quote>
       </Section>
 
@@ -236,8 +236,9 @@ const Page = () => {
 
       <div
         className={twMerge(
-          "flex flex-col mt-[32px] gap-[16px] mb-[96px]",
-          "md:flex-row md:mb-[128px] md:max-w-[1024px] mx-auto"
+          "flex flex-col mt-[32px] gap-[16px] mb-[96px] mx-[16px]",
+          "md:flex-row md:mb-[128px] md:max-w-[1024px]",
+          "lg:mx-auto lg:px-[32px]"
         )}
       >
         <div className="flex-1">
@@ -558,7 +559,7 @@ const Page = () => {
         </Section.BulletList>
       </Section>
 
-      <Section className="mb-0">
+      <Section>
         <Section.Label>• WRAP UP</Section.Label>
         <Section.Title>Final thoughts</Section.Title>
         <Section.Text>
