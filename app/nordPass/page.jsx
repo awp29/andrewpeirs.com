@@ -99,7 +99,7 @@ const Page = () => {
         <Section.Title>What is NordPass?</Section.Title>
         <Section.Text>
           <ExternalLink to="https://nordpass.com/">NordPass</ExternalLink> is a
-          password manager created by the team behind{" "}
+          password manager developed by the team behind{" "}
           <ExternalLink to="https://nordvpn.com/">NordVPN</ExternalLink>
         </Section.Text>
       </Section>
@@ -110,23 +110,23 @@ const Page = () => {
         <Section.Label>• THE PROBLEM</Section.Label>
         <Section.Title>UI looks a bit thrown together</Section.Title>
         <Section.Text>
-          NordPass offers great features but users see it as a bit thrown
-          together. This is down to a bunch of simple design problems
+          NordPass offers great features, but users often feel the UI is a bit
+          of a mess. This is due to several simple design issues:
           <Section.BulletList>
             <li>
-              <Section.Text>An ugly UI</Section.Text>
+              <Section.Text>An unattractive UI</Section.Text>
             </li>
             <li>
               <Section.Text>Forms that lack validation</Section.Text>
             </li>
             <li>
-              <Section.Text>Copy that doesn&apos;t sound human</Section.Text>
+              <Section.Text>Copy that doesn't sound natural</Section.Text>
             </li>
             <li>
               <Section.Text>Missing feedback</Section.Text>
             </li>
             <li>
-              <Section.Text>And missing edge cases</Section.Text>
+              <Section.Text>Unaddressed edge cases</Section.Text>
             </li>
           </Section.BulletList>
         </Section.Text>
@@ -162,40 +162,42 @@ const Page = () => {
 
       <Section>
         <Section.Label>• THE SOLUTION</Section.Label>
-        <Section.Title>NordPass 3000 - UI redesign</Section.Title>
+        <Section.Title>NordPass - UI redesign</Section.Title>
         <Section.Text>
-          By applying basic design principles I was able to redesign NordPass
-          into a modern polished app that users could appreciate.
+          By applying basic design principles, I was able to transform NordPass
+          into a modern, polished app that users would appreciate.
+          <br />
+          Here's what I did:
           <Section.BulletList>
             <li>
               <Section.Text>
-                I used the{" "}
+                Used the{" "}
                 <ExternalLink to="https://www.practical-ui.com/design-system/">
                   Practical UI design system
                 </ExternalLink>{" "}
-                to create a modern, polished UI
+                to create a sleek, contemporary UI.
               </Section.Text>
             </li>
             <li>
               <Section.Text>
-                I improved the add/edit forms to have obvious validation
+                Improved the add/edit forms to include clear validation.
               </Section.Text>
             </li>
             <li>
               <Section.Text>
-                I updated the copy to sound more human
+                Updated the copy to sound more natural and user-friendly.
               </Section.Text>
             </li>
             <li>
               <Section.Text>
-                I added feedback to make the app feel like it was working with
-                the User
+                Added feedback to make the app feel responsive and in sync with
+                the user.
               </Section.Text>
             </li>
             <li>
               <Section.Text>
-                And I covered the edge cases like generic errors and no results
-                states
+                Addressed edge cases, like handling generic errors and "no
+                results" states.
               </Section.Text>
             </li>
           </Section.BulletList>
@@ -208,9 +210,9 @@ const Page = () => {
         <Section.Label>• MY ROLE</Section.Label>
         <Section.Title>UI Designer</Section.Title>
         <Section.Text>
-          NordPass 3000 is a learning project I took on in my own time. Its a
-          study in understanding how to create a professional UI. I designed
-          everything myself using Practical UI and Figma.
+          NordPass is a personal learning project I worked on in my own time.
+          It's a study in creating a professional UI. I designed everything
+          myself using Practical UI and Figma.
         </Section.Text>
       </Section>
 
@@ -220,9 +222,9 @@ const Page = () => {
         <Section.Label>• UI</Section.Label>
         <Section.Title>NordPass UI redesign</Section.Title>
         <Section.Text>
-          The obvious issue with NordPass is it&apos;s UI. It all just looks a
-          bit thrown together. I redesigned NordPass using Practical UI to give
-          it a more modern and polished look.
+          A key feature of any password manager is the ability to quickly copy
+          passwords. I designed the UI so users are always just a few
+          interactions away from the password they need.
         </Section.Text>
       </Section>
 
@@ -256,11 +258,11 @@ const Page = () => {
 
       <Section className="mb-[32px] md:mb-[48px]">
         <Section.Label>• UX</Section.Label>
-        <Section.Title>NordPass UI redesign</Section.Title>
+        <Section.Title>Copying a password should be super quick</Section.Title>
         <Section.Text>
-          The obvious issue with NordPass is it&apos;s UI. It all just looks a
-          bit thrown together. I redesigned NordPass using Practical UI to give
-          it a more modern and polished look.
+          A key feature of a password manager is allowing users to quickly copy
+          their passwords. I designed the UI so users are never more than a few
+          interactions away from the password they need.
         </Section.Text>
       </Section>
 
@@ -285,11 +287,13 @@ const Page = () => {
 
       <Section className="mb-[32px] md:mb-[48px]">
         <Section.Label>• COPY</Section.Label>
-        <Section.Title>Clear, specific, professional copy</Section.Title>
+        <Section.Title>
+          Clear, Professional, and Human-Friendly Copy
+        </Section.Title>
         <Section.Text>
-          Good copy is key. It can inform the user into what exactly is going on
-          and prevent potential confusion. NordPass has a few cases of vague
-          copy that could be improved
+          Clear copy is essential. It helps users understand exactly what's
+          happening and prevents confusion. NordPass has several instances of
+          vague copy that need improvement.
         </Section.Text>
       </Section>
 
@@ -301,12 +305,11 @@ const Page = () => {
 
       <Section className="mb-[32px] md:mb-[48px]">
         <Section.Label>• FEEDBACK</Section.Label>
-        <Section.Title>Way more feedback</Section.Title>
+        <Section.Title>Enhanced User Feedback</Section.Title>
         <Section.Text>
-          Strong feedback can bring an app to life and make it feel like
-          it&apos;s actively trying to help the user instead of a black hole
-          sucking in inputs. NordPass provides feedback but it could do with a
-          bit more
+          Effective feedback brings an app to life, making it feel responsive
+          and helpful rather than just a black hole consuming input. While
+          NordPass provides some feedback, there's room for improvement.
         </Section.Text>
       </Section>
 
@@ -322,8 +325,9 @@ const Page = () => {
           Errors, empty states, loading states, no results and 404s
         </Section.Title>
         <Section.Text>
-          To create an app that feels well rounded and thought out you need to
-          cover the edge cases. NordPass covers some but also misses a few out.
+          To create an app that feels polished and well-thought-out, you need to
+          cover all the edge cases. NordPass handles some, but there are still a
+          few it misses.
         </Section.Text>
       </Section>
 
@@ -368,11 +372,10 @@ const Page = () => {
         <Section.Label>• REVIEW</Section.Label>
         <Section.Title>NordPass redesign</Section.Title>
         <Section.Text>
-          NordPass offers some great features but it is let down by a UI that
-          users see as thrown together. By applying some simple design
-          principles I was able to redesign NordPass into a modern polished app
-          that felt more professional and allowed users to appreciate the
-          features it has to offer.
+          NordPass has great features, but its UI felt disjointed to users. By
+          applying simple design principles, I was able to redesign NordPass
+          into a modern, polished app that feels more professional, allowing
+          users to better appreciate its features.
         </Section.Text>
       </Section>
 
@@ -380,42 +383,40 @@ const Page = () => {
         <Section.Label>• LEARNINGS</Section.Label>
         <Section.Title>Good UI elevates good UX</Section.Title>
         <Section.Text className="md:mb-[48px]">
-          A product can offer great features and UX but if the UI looks thrown
-          together then the users will see it that way. Having a modern,
-          polished UI can elevate great UX and allow features to shine.
+          A product can have great features and UX, but if the UI feels thrown
+          together, users will notice. A modern, polished UI enhances the user
+          experience and lets the features truly shine.
         </Section.Text>
 
         <Section.Title>
           The fine details make a well rounded product
         </Section.Title>
         <Section.Text>
-          Obvious form instructions, super clear copy, strong feedback and
-          covering the edge cases are what make a product feel complete
+          Obvious form instructions, clear copy, strong feedback, and covering
+          edge cases are what make a product feel complete.
           <Section.BulletList>
             <li>
               <Section.Text>
-                <span className="font-bold">
-                  Forms should include obvious instructions and validation
-                </span>{" "}
-                to prevent frustration
+                <span className="font-bold">Forms</span> should include clear
+                instructions and validation to prevent frustration.
               </Section.Text>
             </li>
             <li>
               <Section.Text>
-                <span className="font-bold">Clear, specific copy</span> allows
-                users to understand exactly what&apos;s going on
+                <span className="font-bold">Clear, specific copy</span> helps
+                users understand exactly what's happening.
               </Section.Text>
             </li>
             <li>
               <Section.Text>
-                <span className="font-bold">Strong feedback</span> stops a
-                product from feeling like a soulless black box
+                <span className="font-bold">Strong feedback</span> ensures the
+                product doesn't feel like a soulless black box.
               </Section.Text>
             </li>
             <li>
               <Section.Text>
-                <span className="font-bold">Taking care of the edge cases</span>{" "}
-                makes a product feel well rounded and thought out
+                <span className="font-bold">Addressing edge cases</span> makes
+                the product feel thoughtful and well-rounded.
               </Section.Text>
             </li>
           </Section.BulletList>
@@ -426,9 +427,9 @@ const Page = () => {
         <Section.Label>• WRAP UP</Section.Label>
         <Section.Title>Final thoughts</Section.Title>
         <Section.Text>
-          Redesigning NordPass has taught me that good UX is super important but
-          if you want users to see a product as professional UX alone won't do
-          it. You need great UI!
+          Redesigning NordPass taught me that good UX is crucial, but if you
+          want users to see a product as professional, UX alone won’t cut it.
+          You need a great UI too!
         </Section.Text>
       </Section>
     </>
