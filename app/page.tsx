@@ -7,7 +7,6 @@ import EmailLink from "./components/emailLink";
 import ExternalLink from "./components/externalLink";
 import Project from "./components/project/Project";
 import { ibm } from "app/fonts";
-import Image from "next/image";
 
 export default function Page() {
   const headerRef = useRef(null);
