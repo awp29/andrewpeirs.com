@@ -89,9 +89,9 @@ const Page = () => {
               "md:flex-row md:gap-[48px]"
             )}
           >
-            <div className="flex-1">
+            <div className="flex-1 w-full">
               <img
-                className="object-contain m-auto border-1 border-[#000D4D73] border-solid rounded-[8px] shadow-lg"
+                className="w-full object-contain m-auto border-1 border-[#000D4D73] border-solid rounded-[8px] shadow-lg"
                 src="/images/minesweeperCaseStudy/classicMinesweeper.jpg"
               />
             </div>
@@ -114,9 +114,9 @@ const Page = () => {
               design but has really good win/lose animations
             </Section.Text>
 
-            <div className="flex-1">
+            <div className="flex-1 w-full">
               <img
-                className="object-contain m-auto border-1 border-[#000D4D73] border-solid rounded-[8px] shadow-lg"
+                className="w-full object-contain m-auto border-1 border-[#000D4D73] border-solid rounded-[8px] shadow-lg"
                 src="/images/minesweeperCaseStudy/googleMinesweeper.jpg"
               />
             </div>
@@ -128,9 +128,9 @@ const Page = () => {
               "md:flex-row md:gap-[48px]"
             )}
           >
-            <div className="flex-1">
+            <div className="flex-1 w-full">
               <img
-                className="object-contain m-auto border-1 border-[#000D4D73] border-solid rounded-[8px] shadow-lg"
+                className="w-full object-contain m-auto border-1 border-[#000D4D73] border-solid rounded-[8px] shadow-lg"
                 src="/images/minesweeperCaseStudy/emojiMinesweeper.jpg"
               />
             </div>
@@ -212,8 +212,8 @@ const Page = () => {
         >
           <div
             className={classNames(
-              "flex flex-col gap-[24px] items-center",
-              "md:flex-row md:gap-[32px]"
+              "flex flex-col gap-[24px] items-start",
+              "md:flex-row md:gap-[32px] md:items-center"
             )}
           >
             <img
@@ -237,8 +237,8 @@ const Page = () => {
 
           <div
             className={classNames(
-              "flex flex-col gap-[24px] items-center",
-              "md:flex-row md:gap-[32px]"
+              "flex flex-col gap-[24px] items-start",
+              "md:flex-row md:gap-[32px] md:items-center"
             )}
           >
             <img
@@ -260,8 +260,8 @@ const Page = () => {
 
           <div
             className={classNames(
-              "flex flex-col gap-[24px] items-center",
-              "md:flex-row md:gap-[32px]"
+              "flex flex-col gap-[24px] items-start",
+              "md:flex-row md:gap-[32px] md:items-center"
             )}
           >
             <img
@@ -286,8 +286,8 @@ const Page = () => {
 
           <div
             className={classNames(
-              "flex flex-col gap-[24px] items-center",
-              "md:flex-row md:gap-[32px]"
+              "flex flex-col gap-[24px] items-start",
+              "md:flex-row md:gap-[32px] md:items-center"
             )}
           >
             <img
@@ -311,8 +311,8 @@ const Page = () => {
 
           <div
             className={classNames(
-              "flex flex-col gap-[24px] items-center",
-              "md:flex-row md:gap-[32px]"
+              "flex flex-col gap-[24px] items-start",
+              "md:flex-row md:gap-[32px] md:items-center"
             )}
           >
             <img
@@ -489,7 +489,7 @@ const Page = () => {
         </Section.Text>
       </Section>
 
-      <Section className="mb-[32px] md:mb-[48px]">
+      <Section>
         <Section.Label>• TAKEAWAY</Section.Label>
         <Section.Title>Visual hierarchy is a core UI principle</Section.Title>
         <Section.Text>
