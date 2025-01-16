@@ -13,12 +13,7 @@ const ViewLiveVersionButton = React.forwardRef((_, ref) => {
         "hover:brightness-95",
         "active:brightness-90 active:drop-shadow-none"
       )}
-      onClick={() => {
-        ref.current.scrollIntoView({
-          behavior: "smooth",
-        });
-      }}
-      to="blah"
+      href="https://sm-30.vercel.app/"
     >
       <span className="block relative overflow-clip">
         <span
@@ -29,7 +24,7 @@ const ViewLiveVersionButton = React.forwardRef((_, ref) => {
         >
           View live version
           <Image
-            src="/icons/arrowRight.svg"
+            src="/icons/externalLink.svg"
             width={20}
             height={20}
             alt="an arrow pointing right"
@@ -44,7 +39,7 @@ const ViewLiveVersionButton = React.forwardRef((_, ref) => {
         >
           View live version
           <Image
-            src="/icons/arrowRight.svg"
+            src="/icons/externalLink.svg"
             width={20}
             height={20}
             alt="an arrow pointing right"
