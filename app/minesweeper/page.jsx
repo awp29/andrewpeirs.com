@@ -14,7 +14,6 @@ import ExternalLink from "app/components/externalLink";
 import useScrollPosition from "app/hooks/useScrollPosition";
 import useScrollToTop from "app/hooks/useScrollToTop";
 import { createRef } from "react";
-import Image from "next/image";
 import classNames from "classnames";
 import ViewLiveVersionButton from "./ViewLiveVersionButton";
 

@@ -95,11 +95,11 @@ const Page = () => {
         <Section.Label>• THE PROBLEM</Section.Label>
         <Section.Title>I hate parking apps</Section.Title>
         <Section.Text>
-          Parking apps are awful! They frustrate users by displaying unclear
-          parking instructions, hiding core features away and forcing them
-          through confusing payment flows that are so bad users end up not
-          trusting them. I am sick of fighting with badly designed parking apps.
-          I want to design a parking app that users actually want to use.
+          Parking apps are a nightmare! They confuse users with vague
+          instructions, bury essential features, and make payments a hassle—so
+          much so that people just stop trusting them. I'm sick of struggling
+          with poorly designed parking apps. I want to create one that people
+          actually enjoy using.
         </Section.Text>
       </Section>
 
@@ -107,9 +107,9 @@ const Page = () => {
         <Section.Label>• THE SOLUTION</Section.Label>
         <Section.Title>Easy parking with EasyPark</Section.Title>
         <Section.Text>
-          By focusing on user research, user interviews and surveys I was able
-          to learn what users actually want from a parking app. Using that data
-          I designed EasyPark, a new parking app with user needs at it’s centre.
+          Through user research, interviews, and surveys, I learnt what users
+          actually want from a parking app. Using these insights, I designed
+          EasyPark, a new app built around the needs of its users.
         </Section.Text>
 
         <Section.JumpToFinalDesignsButton ref={finalDesignsRef} />
@@ -119,10 +119,13 @@ const Page = () => {
         <Section.Label>• MY ROLE</Section.Label>
         <Section.Title>Learning UI/UX design with CourseCareers</Section.Title>
         <Section.Text>
-          EasyPark is a project I worked on as part of the Course Careers UI/UX
-          design course. As a learning project I did everything myself, from
-          User Interviews and surveys all the way to High-Fidelity designs and
-          prototyping.
+          EasyPark is a project I created during the{" "}
+          <ExternalLink to="https://coursecareers.com/explore/uiux">
+            Course Careers
+          </ExternalLink>{" "}
+          UI/UX design course. As a hands-on learning experience, I handled
+          everything myself, from user interviews and surveys to high-fidelity
+          designs and prototyping.
         </Section.Text>
       </Section>
 
@@ -134,10 +137,10 @@ const Page = () => {
           Finding a parking space is not the priority
         </Section.Title>
         <Section.Text>
-          25 users responded to my survey and they taught me two key things.
-          RingGo and PayByPhone are the most popular parking apps and users
-          don't care so much about finding a parking space, they care about
-          payments.
+          I surveyed 25 users, and they taught me two important things: RingGo
+          and PayByPhone are the most popular parking apps, and users care less
+          about finding a parking space and more about making the payment
+          process easy.
         </Section.Text>
       </Section>
 
@@ -146,7 +149,7 @@ const Page = () => {
           <Survey.Percent>81%</Survey.Percent>
 
           <Survey.Text>
-            of respondents find payments to be the most useful feature of
+            of respondents said that payments are the most important feature of
             parking apps.
           </Survey.Text>
         </Survey.Stat>
@@ -155,8 +158,8 @@ const Page = () => {
           <Survey.Percent>68%</Survey.Percent>
 
           <Survey.Text>
-            Of respondents said RingGo and PayByPhone are their prefered parking
-            app
+            of respondents said their preferred parking apps are RingGo and
+            PayByPhone.
           </Survey.Text>
         </Survey.Stat>
 
@@ -164,7 +167,7 @@ const Page = () => {
           <Survey.Percent>92%</Survey.Percent>
 
           <Survey.Text>
-            Of respondents would like to be better parking data
+            of respondents said they'd like better parking data.
           </Survey.Text>
         </Survey.Stat>
       </Survey>
@@ -172,18 +175,17 @@ const Page = () => {
       <Section>
         <Section.Label>• USER INTERVIEWS</Section.Label>
         <Section.Title>
-          Users don’t really want to use a parking app
+          Users don't really want to use a parking app
         </Section.Title>
         <Section.Text>
-          Through my interviews I learnt that users don’t really care about
-          parking apps. All they want is to be able to quickly and easily pay
-          for parking.
+          Through my interviews, I learned that users don't really care about
+          parking apps; they just want a quick and easy way to pay for parking.
         </Section.Text>
 
         <Quote>
           <Quote.Text>
-            “My ideal parking app is one I never have to open. I park up, it
-            automatically pays for parking and I can get on with my day”
+            “My ideal parking app is one I never have to open. I park, it
+            automatically handles the payment, and I can go on with my day.”
           </Quote.Text>
           <Quote.Author>MARCO ANGELO</Quote.Author>
         </Quote>
@@ -193,10 +195,10 @@ const Page = () => {
         <Section.Label>• AFFINITY MAP</Section.Label>
         <Section.Title>Wheres the UX?</Section.Title>
         <Section.Text>
-          Users have a lot of pain points with car parking apps but it’s not to
-          do with missing features or better features, they want better UX. My
-          research has shown that users just do not like how these core features
-          are implemented.
+          Users have many pain points with parking apps, but it's not about
+          missing or better features; they want a better user experience. My
+          research shows that the issue is how these core features are
+          implemented.
         </Section.Text>
       </Section>
 
@@ -208,10 +210,10 @@ const Page = () => {
           Parking apps have solid core features but wrapped in terrible UX
         </Section.Title>
         <Section.Text>
-          RingGO and PayByPhone are the two most popular parking apps but they
-          suffer from the same problem, bad UI and bad UX. They offer a set of
-          features that users want to like, payments, finding parking and
-          parking alerts but wrap them up in terrible UX.
+          RingGo and PayByPhone are the two most popular parking apps, but they
+          share the same problem: poor UI and UX. They offer features users
+          want, such as payments, finding parking, and parking alerts, but they
+          wrap them in a frustrating user experience.
         </Section.Text>
       </Section>
 
@@ -221,16 +223,16 @@ const Page = () => {
         <Section.Label>• USER PERSONAS</Section.Label>
         <Section.Title>Enter Alex and Sam</Section.Title>
         <Section.Text>
-          From my research two distinct types of users started to appear.
+          My research revealed two distinct types of users:
           <br />
           <br />
-          <span className="font-bold">The solo parker</span> - These are
-          professionals. They drive to work, the gym, or to meet friends.
+          <span className="font-bold">The solo parker</span> - Professionals who
+          drive to work, the gym, or to meet friends.
           <br />
           <br />
-          <span className="font-bold">The family parker</span> - These are
-          parents with young children. Their driving revolves around taking
-          their kids to school, outings and to see family.
+          <span className="font-bold">The family parker</span> - Parents with
+          young children, whose driving is mostly for school runs, outings, and
+          family visits.
         </Section.Text>
       </Section>
 
@@ -258,18 +260,17 @@ const Page = () => {
 
       <Section className="mb-[32px] md:mb-[48px]">
         <Section.Label>• EMPATHY MAP</Section.Label>
-        <Section.Title>What does Alex and Sam want?</Section.Title>
+        <Section.Title>What do Alex and Sam want?</Section.Title>
         <Section.Text>
-          <span className="font-bold">Alex</span> isn’t that fussed about
-          finding the cheapest parking space, he wants a quick payment process
-          so he can get on with his day and not think about parking more than he
-          needs to.
+          <span className="font-bold">Alex</span> isn't concerned with finding
+          the cheapest parking spot; he just wants a fast payment process so he
+          can get on with his day without having to think about parking.
           <br />
           <br />
-          <span className="font-bold">Sam</span> just wants a quick and easy
-          payment flow, parking with two kids fighting in the backseat is a
-          nightmare and she doesn't want to deal with that while struggling to
-          make a payment through a crappy parking app.
+          <span className="font-bold">Sam</span> on the other hand, wants a
+          quick and easy payment flow. With two kids fighting in the backseat,
+          parking is already stressful, and she doesn't want to add the
+          frustration of struggling with a crappy app.
         </Section.Text>
       </Section>
 
@@ -279,11 +280,11 @@ const Page = () => {
         <Section.Label>• USER JOURNEY MAP</Section.Label>
         <Section.Title>Convincing Alex and Sam to sign up</Section.Title>
         <Section.Text>
-          Alex and Sam are skeptical of another parking app, all of the others
-          are awful, why should EasyPark be any different. To turn Alex and Sam
-          into daily users I need to give them a great first impression of
-          EasyPark and a super simple sign up process otherwise I run the risk
-          of EasyPark being written off as another crappy parking app.
+          Alex and Sam are skeptical about trying another parking app; most of
+          them are awful, so why would EasyPark be any different? To win them
+          over as daily users, I need to make a strong first impression with
+          EasyPark and offer a super simple sign-up process. Otherwise, I risk
+          EasyPark being dismissed as just another crappy parking app.
         </Section.Text>
       </Section>
 
@@ -301,25 +302,25 @@ const Page = () => {
       <Section className="mb-[32px] md:mb-[48px]">
         <Section.H3>The payment flow</Section.H3>
         <Section.Text>
-          Payments is the core feature that users want and Alex and Sam do no
-          want to get hung up on an awkward payment flow. They want to quickly
-          pay and get on with their day. The payment flow should
+          Payments are the core feature users want, and Alex and Sam don’t want
+          to get stuck in a frustrating payment flow. They just want to pay
+          quickly and get on with their day. The payment flow should:
         </Section.Text>
 
         <Section.BulletList>
           <li>
             <Section.Text>
-              Be a set of simple steps with clear instructions
+              Be a series of simple steps with clear instructions.
             </Section.Text>
           </li>
           <li>
             <Section.Text>
-              Preselect the user default payment and vehicle option
+              Preselect the user's default payment and vehicle options.
             </Section.Text>
           </li>
           <li>
             <Section.Text>
-              And handle edge cases like expired payment options gracefully
+              Handle edge cases, like expired payment methods, smoothly.
             </Section.Text>
           </li>
         </Section.BulletList>
@@ -332,10 +333,10 @@ const Page = () => {
           Finding parking
         </Section.H3>
         <Section.Text>
-          Finding a car park should be super easy. Alex and Sam want to open the
-          app, land on a map centred on their location where they can either
-          interact with the map to find a car park or type an address into a
-          search bar.
+          Finding a parking spot should be super easy. Alex and Sam want to open
+          the app and immediately see a map centered on their location, where
+          they can either browse the map to find a parking spot or type an
+          address into a search bar.
         </Section.Text>
       </Section>
 
@@ -344,10 +345,10 @@ const Page = () => {
       <Section className="mb-[32px] md:mb-[48px]">
         <Section.H3 className="mt-[64px] md:mt-[96px]">Pay Now</Section.H3>
         <Section.Text>
-          Frequently Alex and Sam will drive to a car park and only open a
-          parking app when they need to pay. They don't want to have to open
-          EasyPark and mess around with a map or go through the Finding a Car
-          Park flow. They want a shortcut to go directly to paying for parking.
+          Frequently, Alex and Sam will drive to a car park and only open the
+          app when it's time to pay. They don’t want to deal with maps or go
+          through the "Finding a Car Park" flow. They just want a shortcut that
+          takes them straight to the payment flow.
         </Section.Text>
       </Section>
 
@@ -357,10 +358,10 @@ const Page = () => {
         <Section.Label>• SKETCHES + WIREFRAMES</Section.Label>
         <Section.Title>What works? what doesn't?</Section.Title>
         <Section.Text>
-          I have a ton of ideas on how Payments, Finding a car park and Pay now
-          should look and feel but what is right and wrong? I dont know. I
-          iterated over a bunch of sketches and wireframes to quickly figure out
-          what worked and what didn't work for these features.
+          I have a ton of ideas about how Payments, Finding a Car Park, and Pay
+          Now should look and feel, but what's right and what's wrong? I'm not
+          sure. So, I went through multiple sketches and wireframes to quickly
+          test what worked and what didn't for these features.
         </Section.Text>
       </Section>
 
@@ -412,9 +413,9 @@ const Page = () => {
           Searching for inspiration - Behance, Dribbble and Mobbin
         </Section.Title>
         <Section.Text>
-          I searched for as much design inspiration as I could find. I found it
-          in existing parking apps, RingGO and PayByPhone, my
-          sketches/wireframes and on Behance, Dribbble and Mobbin.
+          I searched for design inspiration everywhere I could. I found it in
+          existing parking apps like RingGo and PayByPhone, in my own sketches
+          and wireframes, and on platforms like Behance, Dribbble, and Mobbin.
         </Section.Text>
       </Section>
 
@@ -422,12 +423,11 @@ const Page = () => {
         <Section.Label>• DESIGN SYSTEM</Section.Label>
         <Section.Title>Practical UI to speed up designs</Section.Title>
         <Section.Text>
-          I decided to use an off the shelf design system as it saves me a bunch
-          of time. I choose to use{" "}
+          To save time, I decided to use an off-the-shelf design system. I chose{" "}
           <ExternalLink to="https://www.practical-ui.com/design-system/">
             Practical UI
           </ExternalLink>{" "}
-          as it provides a set of clean, simple, minimal, high quality UI
+          because it offers a set of clean, simple, minimal, and high-quality UI
           components that are fully accessible.
         </Section.Text>
       </Section>
@@ -440,8 +440,8 @@ const Page = () => {
         <Section.Title>EasyPark's ALIVE!</Section.Title>
         <Section.Text>
           I created my final designs using Practical UI and the inspiration I
-          found online. Once the final designs where done I turned them into a
-          Figma Prototype.
+          found online. Once the designs were complete, I turned them into a
+          Figma prototype.
         </Section.Text>
 
         <div className="w-full my-[32px]">
@@ -467,20 +467,21 @@ const Page = () => {
 
       <Section className="mb-[32px] md:mb-[48px]">
         <Section.Label>• USER TESTING</Section.Label>
-        <Section.Title>Users like EasyPark but what is Pay now?</Section.Title>
+        <Section.Title>
+          Users like EasyPark, but what is "Pay Now"?
+        </Section.Title>
         <Section.Text>
-          I performed a series of User Tests to see if users actually found
-          EasyPark easier to use. For the most part everything went great users
-          could easily pay for parking and they could find the car park they
-          wanted but they all ran into the same issue, what is Pay now? what
-          does it mean?
+          I conducted a series of user tests to see if users found EasyPark
+          easier to use. Overall, things went well; users could easily pay for
+          parking and find the car park they wanted. But they all ran into the
+          same issue: What is "Pay Now"? What does it mean?
         </Section.Text>
 
-        <Section.H3>Pay now before and after</Section.H3>
+        <Section.H3>Pay Now: Before and After</Section.H3>
         <Section.Text>
-          In my original designs Pay Now was a button in the nav bar. To make it
-          clear that Pay now is a shortcut to paying I extracted it out of the
-          nav bar and into it's own button with clear instructions.
+          In my original designs, "Pay Now" was just a button in the nav bar. To
+          make it clear that it's a shortcut to payment, I moved it out of the
+          nav bar and gave it its own button with clear instructions.
         </Section.Text>
       </Section>
 
@@ -500,10 +501,10 @@ const Page = () => {
         <Section.Label>• REVIEW</Section.Label>
         <Section.Title>Parking apps don't have to be awful</Section.Title>
         <Section.Text>
-          Existing car parking apps are awful, they offer features that users
-          want to like but wrap them up in terrible UX. Through user research
-          and designing for users I was able to create EasyPark. A new parking
-          app with users needs at it's centre.
+          Most parking apps are frustrating to use. They offer features users
+          want, but the poor UX makes them hard to use. Through user research
+          and a focus on real user needs, I created EasyPark, a parking app
+          built with the user in mind.
         </Section.Text>
       </Section>
 
@@ -511,29 +512,27 @@ const Page = () => {
         <Section.Label>• LEARNINGS</Section.Label>
         <Section.Title>Research is everything</Section.Title>
         <Section.Text>
-          EasyPark is the first app I have designed and I have definitely learnt
-          a lot.
+          EasyPark is the first app I've designed, and I've learned a lot
+          through the process.
         </Section.Text>
 
         <Section.BulletList>
           <li>
             <Section.Text>
               <span className="font-bold">Research is everything.</span> Without
-              research you are just guessing at what your users want and you
-              can't build a app based on guess work. You need to do research,
-              only from User surveys and User interviews can you begin to gather
-              the data you need to make design decisions that are right for the
-              user.
+              it, you're just guessing what users want, and you can't build a
+              successful app based on guesswork. You need solid user surveys and
+              interviews to gather the data necessary to make design decisions
+              that truly meet user needs. user.
             </Section.Text>
           </li>
           <li>
             <Section.Text>
-              <span className="font-bold">Research is hard.</span> There is a
-              definite art to performing user research and I feel it's an area I
-              need to improve in. If you don't ask the right question in the
-              right way there is a real chance of getting data that can lead you
-              into designing something you think the users want but they
-              actually don't.
+              <span className="font-bold">Research is hard.</span> There's an
+              art to it, and I know it's an area where I need to improve. If you
+              don't ask the right questions in the right way, you risk
+              collecting data that leads you to design something you think users
+              want—only to find out they don't.
             </Section.Text>
           </li>
           <li>
@@ -541,19 +540,19 @@ const Page = () => {
               <span className="font-bold">
                 Hold off on high fidelity designs.
               </span>{" "}
-              My favourite part of design is opening up Figma and creating some
-              fancy designs. I need to learn to hold off from doing this as I
-              start to create designs based on my assumptions not on user
-              research.
+              My favorite part of design is jumping into Figma and creating
+              polished designs. But I've learned to resist the urge, as I've
+              often ended up designing based on assumptions rather than solid
+              user research.
             </Section.Text>
           </li>
           <li>
             <Section.Text>
               <span className="font-bold">Design for users not yourself.</span>{" "}
-              It's not about what you want, it's about what your user's want,
-              thats why User personas are so important. They allow you to put
-              yourself into your users shoes and to make design decisions that
-              are the best for them.
+              It's not about what you want—it's about what your users need.
+              That's why user personas are so crucial. They help you step into
+              your users' shoes and make decisions that are best for them, not
+              for you.
             </Section.Text>
           </li>
         </Section.BulletList>
@@ -563,11 +562,11 @@ const Page = () => {
         <Section.Label>• WRAP UP</Section.Label>
         <Section.Title>Final thoughts</Section.Title>
         <Section.Text>
-          EasyPark has been a great learning experience for me, I’ve learnt the
-          importance of user research, how to turn research into User personas
-          and why you should always design for the user. I still have lots to
-          learn but I definitely feel I am on the path to becoming a UI/UX
-          designer.
+          EasyPark has been a great learning experience. I've learned the
+          importance of user research, how to turn that research into user
+          personas, and why designing for the user is always the priority.
+          There's still a lot for me to learn, but I definitely feel like I'm on
+          the right path to becoming a UI/UX designer.
         </Section.Text>
       </Section>
     </>
