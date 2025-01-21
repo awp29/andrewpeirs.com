@@ -44,9 +44,6 @@ export default function Page() {
 
       <div className="flex gap-[12px] mt-[24px]">
         <EmailLink />
-        <ExternalLink to="https://www.linkedin.com/in/andrew-peirs">
-          LinkedIn
-        </ExternalLink>
         <ExternalLink to="/APSeniorCV.pdf">CV</ExternalLink>
       </div>
 
