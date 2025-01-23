@@ -8,7 +8,7 @@ const Tag = (props) => {
     <div
       className={classNames(
         ibm.className,
-        "bg-[#0015800A] border-[#00116619] border-solid border-1 rounded-full w-fit px-[12px] h-[28px] flex items-center text-[14px]"
+        "bg-[#0015800A] border-[#00116619] border-solid border-1 rounded-full w-fit px-[12px] h-[28px] flex items-center text-[#000626F2] text-[14px]"
       )}
     >
       {children}
