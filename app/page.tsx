@@ -55,8 +55,16 @@ export default function Page() {
           <Project.DetailsColumn>
             <Project.Header>01</Project.Header>
             <Project.Title>EasyPark</Project.Title>
+            <Project.Tags>
+              <Project.Tag>Figma</Project.Tag>
+              <Project.Tag>User-centered-design</Project.Tag>
+              <Project.Tag>Practical UI</Project.Tag>
+            </Project.Tags>
+
             <Project.Description>
-              A learning project to get my head into user-centered design
+              A hands-on learning project where I immersed myself in
+              user-centered design, applying research and empathy to create
+              user-focused solutions.
             </Project.Description>
 
             <Project.CaseStudyLink to="/easyPark" />
@@ -64,7 +72,7 @@ export default function Page() {
 
           <div
             className={classNames(
-              "flex bg-[#26B0FF0D] flex-1 p-[16px] gap-[8px]",
+              "flex bg-[#26B0FF0D] flex-1 p-[16px] gap-[8px] items-center",
               "md:p-[32px] md:gap-[16px]",
               "lg:col-span-6"
             )}
@@ -106,39 +114,18 @@ export default function Page() {
         <Project>
           <Project.DetailsColumn>
             <Project.Header>02</Project.Header>
-            <Project.Title>NordPass Redesign</Project.Title>
-            <Project.Description>
-              An update to the NordPass web app to give it a modern look and
-              feel
-            </Project.Description>
-
-            <Project.CaseStudyLink to="/nordPass" />
-          </Project.DetailsColumn>
-
-          <div
-            className={classNames(
-              "flex bg-[#26B0FF0D] flex-1 p-[16px]",
-              "md:p-[32px]",
-              "lg:col-span-6"
-            )}
-          >
-            <img
-              className={classNames(
-                "border-1 border-[#000D4D73] border-solid rounded-[8px] shadow-lg",
-                "lg:col-span-6"
-              )}
-              src="/images/nordPassRedesignCaseStudy/nordPassRedesignProjectImage.jpg"
-              alt="Screenshot of the NordPass app showing a table of passwords"
-            />
-          </div>
-        </Project>
-
-        <Project>
-          <Project.DetailsColumn>
-            <Project.Header>03</Project.Header>
             <Project.Title>SM-30</Project.Title>
+            <Project.Tags>
+              <Project.Tag>React</Project.Tag>
+              <Project.Tag>TypeScript</Project.Tag>
+              <Project.Tag>Tailwind</Project.Tag>
+              <Project.Tag>Redux</Project.Tag>
+            </Project.Tags>
+
             <Project.Description>
-              Minesweeper clone inspired by the BraUn products of Dieter Rams
+              An exploration of minimalism through a Minesweeper clone, inspired
+              by the sleek, functional design language of Dieter Rams' Braun
+              products.
             </Project.Description>
 
             <Project.CaseStudyLink to="/minesweeper" />
@@ -158,6 +145,42 @@ export default function Page() {
               )}
               src="/images/minesweeperCaseStudy/minesweeper.gif"
               alt="Screenshot of Super Minesweeper showing the game playing"
+            />
+          </div>
+        </Project>
+
+        <Project>
+          <Project.DetailsColumn>
+            <Project.Header>03</Project.Header>
+            <Project.Title>NordPass Redesign</Project.Title>
+            <Project.Tags>
+              <Project.Tag>Figma</Project.Tag>
+              <Project.Tag>User-centered-design</Project.Tag>
+              <Project.Tag>Practical UI</Project.Tag>
+            </Project.Tags>
+
+            <Project.Description>
+              An overhaul of the NordPass web app, bringing a modern aesthetic
+              and refreshed user experience.
+            </Project.Description>
+
+            <Project.CaseStudyLink to="/nordPass" />
+          </Project.DetailsColumn>
+
+          <div
+            className={classNames(
+              "flex bg-[#26B0FF0D] flex-1 p-[16px]",
+              "md:p-[32px]",
+              "lg:col-span-6"
+            )}
+          >
+            <img
+              className={classNames(
+                "border-1 border-[#000D4D73] border-solid rounded-[8px] shadow-lg",
+                "lg:col-span-6"
+              )}
+              src="/images/nordPassRedesignCaseStudy/nordPassRedesignProjectImage.jpg"
+              alt="Screenshot of the NordPass app showing a table of passwords"
             />
           </div>
         </Project>

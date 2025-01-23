@@ -5,6 +5,8 @@ import DetailsColumn from "./DetailsColumn";
 import Header from "./Header";
 import Image from "./Image";
 import Title from "./Title";
+import Tag from "./Tag";
+import Tags from "./Tags";
 
 const Project = (props) => {
   const { children } = props;
@@ -28,5 +30,7 @@ Project.Description = Description;
 Project.CaseStudyLink = CaseStudyLink;
 Project.DetailsColumn = DetailsColumn;
 Project.Image = Image;
+Project.Tags = Tags;
+Project.Tag = Tag;
 
 export default Project;
